@@ -1,0 +1,23 @@
+import siteConfig from "@/data/siteConfig.json";
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-[#0a2540] py-6">
+      <div className="mx-auto max-w-[1200px] px-6">
+        <p className="text-center text-[14px] text-white/80">
+          Copyrights © {currentYear} {siteConfig.footer.copyrightText}{" "}
+          <a 
+            href={siteConfig.company.website}
+            className="text-white hover:text-[#0ea5ff] transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {siteConfig.footer.copyrightLink}
+          </a>
+        </p>
+      </div>
+    </footer>
+  );
+}

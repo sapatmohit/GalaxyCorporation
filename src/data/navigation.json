@@ -1,0 +1,39 @@
+{
+  "logo": {
+    "text": "Galaxy Corporation",
+    "tagline": "Global Agro Exporters",
+    "image": "/images/logo.png",
+    "showImage": true
+  },
+  "mainNav": [
+    {
+      "label": "Home",
+      "href": "/",
+      "type": "page"
+    },
+    {
+      "label": "Why Us",
+      "href": "/#why-us",
+      "type": "anchor"
+    },
+    {
+      "label": "Products",
+      "href": "/products",
+      "type": "page"
+    },
+    {
+      "label": "Our Team",
+      "href": "/#team",
+      "type": "anchor"
+    },
+    {
+      "label": "Contact",
+      "href": "/#contact",
+      "type": "anchor"
+    }
+  ],
+  "cta": {
+    "text": "Enquire Now",
+    "href": "/#contact"
+  }
+}

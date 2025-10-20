@@ -1,0 +1,52 @@
+{
+  "company": {
+    "name": "Galaxy Corporation",
+    "tagline": "Global Agro Exporters",
+    "fullName": "Galaxy Corporation - Global Agro Exporters",
+    "description": "Leading Exporter & Trader for Agro Commodities in India",
+    "foundedYear": 2008,
+    "website": "https://galaxycorporation.co.in"
+  },
+  "metadata": {
+    "title": "Galaxy Corporation — Global Agro Exporters",
+    "description": "Rooted in Earth, Connected Across the Globe",
+    "keywords": "agro commodities, agricultural exports, spices, pulses, cereals, oil seeds, global trade, India exports",
+    "author": "Galaxy Corporation",
+    "ogImage": "/images/og-image.jpg"
+  },
+  "social": {
+    "facebook": "https://facebook.com/galaxycorp",
+    "twitter": "https://twitter.com/galaxycorp",
+    "linkedin": "https://linkedin.com/company/galaxycorp",
+    "instagram": "https://instagram.com/galaxycorp"
+  },
+  "theme": {
+    "primaryColor": "#0ea5ff",
+    "secondaryColor": "#0a2540",
+    "accentColor": "#0596ea",
+    "beigeColor": "#e9e2d6"
+  },
+  "contact": {
+    "email": {
+      "primary": "info@galaxycorp.com",
+      "sales": "sales@galaxycorp.com",
+      "support": "support@galaxycorp.com"
+    },
+    "phone": {
+      "office": "+91 20 1234 5678",
+      "mobile": "+91 98765 43210"
+    },
+    "address": {
+      "street": "123 Business Hub",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "zipCode": "411001",
+      "country": "India"
+    }
+  },
+  "footer": {
+    "copyrightYear": 2023,
+    "copyrightText": "All Rights Reserved by",
+    "copyrightLink": "galaxycorporation.co.in"
+  }
+}

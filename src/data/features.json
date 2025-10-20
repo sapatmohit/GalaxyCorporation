@@ -1,0 +1,49 @@
+{
+  "title": "Why Choose",
+  "titleHighlight": "Galaxy Corporation",
+  "subtitle": "We combine decades of agricultural expertise with modern trade practices to deliver exceptional value to our global partners.",
+  "features": [
+    {
+      "id": 1,
+      "icon": "globe",
+      "title": "Global Reach",
+      "description": "Serving customers across continents with reliable export services and extensive international trade network."
+    },
+    {
+      "id": 2,
+      "icon": "shield",
+      "title": "Quality Assurance",
+      "description": "Stringent quality control at every step ensures premium grade products that meet international standards."
+    },
+    {
+      "id": 3,
+      "icon": "lightning",
+      "title": "Fast & Efficient",
+      "description": "Streamlined logistics and documentation processes ensure timely delivery and smooth customs clearance."
+    },
+    {
+      "id": 4,
+      "icon": "money",
+      "title": "Competitive Pricing",
+      "description": "Direct sourcing from farmers and bulk processing capabilities allow us to offer the best market rates."
+    }
+  ],
+  "stats": [
+    {
+      "value": "500+",
+      "label": "Global Clients"
+    },
+    {
+      "value": "25+",
+      "label": "Product Categories"
+    },
+    {
+      "value": "50+",
+      "label": "Countries Served"
+    },
+    {
+      "value": "15+",
+      "label": "Years Experience"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 import productsData from "@/data/products.json";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const PRODUCTS = productsData.categories.map(cat => ({
   id: cat.id,

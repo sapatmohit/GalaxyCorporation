@@ -2,7 +2,7 @@
 
 import featuresData from "@/data/features.json";
 import { motion } from "framer-motion";
-import { ReactElement, useState, useEffect } from "react";
+import { ReactElement, useEffect, useState } from "react";
 
 const ICON_MAP: Record<string, ReactElement> = {
   globe: (

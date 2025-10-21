@@ -2,7 +2,7 @@
 
 import membershipsData from "@/data/memberships.json";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const MEMBERSHIPS = membershipsData.organizations.map(org => ({
   ...org

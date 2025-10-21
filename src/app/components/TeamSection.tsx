@@ -1,7 +1,7 @@
 "use client";
 
 import teamData from "@/data/team.json";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 const TEAM_MEMBERS = teamData.members.map(member => ({

@@ -2,12 +2,22 @@
 
 import siteConfig from "@/data/siteConfig.json";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      alert(`Thank you for subscribing with ${email}! You'll receive our updates soon.`);
+      setEmail("");
+    }
+  };
 
   return (
-    <footer className="bg-[#0a2540] pt-16 pb-8">
+    <footer className="bg-gradient-to-b from-[#0a2540] to-[#051a30] pt-16 pb-8">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Company Info */}
@@ -85,35 +95,72 @@ export default function Footer() {
             <p className="text-white/70">
               Subscribe to our newsletter for the latest updates and offers.
             </p>
-            <form className="space-y-3">
-              <input 
-                type="email" 
-                placeholder="Your email address" 
-                className="w-full h-12 px-4 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:border-[#0ea5ff] focus:ring-2 focus:ring-[#0ea5ff]/20 outline-none transition-all"
-              />
+            <form onSubmit={handleSubscribe} className="space-y-3">
+              <div className="relative">
+                <input 
+                  type="email" 
+                  placeholder="Your email address" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full h-12 px-4 pr-12 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:border-[#0ea5ff] focus:ring-2 focus:ring-[#0ea5ff]/20 outline-none transition-all"
+                  required
+                />
+                <div className="absolute right-3 top-1/2 -translate-y-1/2 text-white/30">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+              </div>
               <button 
                 type="submit"
-                className="w-full h-12 rounded-lg bg-[#0ea5ff] text-white font-semibold hover:bg-[#0596ea] transition-colors"
+                className="w-full h-12 rounded-lg bg-gradient-to-r from-[#0ea5ff] to-[#0596ea] text-white font-semibold hover:bg-[#0596ea] transition-colors flex items-center justify-center gap-2"
               >
                 Subscribe
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
               </button>
             </form>
+            
+            {/* Trust Badges */}
+            <div className="flex gap-3 pt-2">
+              <div className="flex items-center gap-1 text-white/60 text-sm">
+                <svg className="w-4 h-4 text-[#0ea5ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+                Secure
+              </div>
+              <div className="flex items-center gap-1 text-white/60 text-sm">
+                <svg className="w-4 h-4 text-[#0ea5ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                Trusted
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="pt-8 mt-8 border-t border-white/10">
-          <p className="text-center text-white/70">
-            Copyrights © {currentYear} {siteConfig.footer.copyrightText}{" "}
-            <a 
-              href={siteConfig.company.website}
-              className="text-white hover:text-[#0ea5ff] transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {siteConfig.footer.copyrightLink}
-            </a>
-          </p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-center md:text-left text-white/70">
+              Copyrights © {currentYear} {siteConfig.footer.copyrightText}{" "}
+              <a 
+                href={siteConfig.company.website}
+                className="text-white hover:text-[#0ea5ff] transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {siteConfig.footer.copyrightLink}
+              </a>
+            </p>
+            
+            <div className="flex gap-6">
+              <a href="#" className="text-white/70 hover:text-[#0ea5ff] transition-colors text-sm">Privacy Policy</a>
+              <a href="#" className="text-white/70 hover:text-[#0ea5ff] transition-colors text-sm">Terms of Service</a>
+              <a href="#" className="text-white/70 hover:text-[#0ea5ff] transition-colors text-sm">Sitemap</a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

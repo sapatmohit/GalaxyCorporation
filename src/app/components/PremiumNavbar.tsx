@@ -37,114 +37,86 @@ export default function PremiumNavbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? "bg-white/90 backdrop-blur-lg shadow-lg border-b border-white/20" 
-          : "bg-white/80 backdrop-blur-md"
+          ? "bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20" 
+          : "bg-white/70 backdrop-blur-sm"
       }`}
     >
-      <div className="container mx-auto px-6">
+      <div className="mx-auto max-w-[1200px] px-6">
         <div className="flex items-center justify-between h-20">
           {/* Left: Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-32 h-20 flex items-center justify-center">
-              <Image
-                src={navData.logo.image}
-                alt={navData.logo.text} 
-                width={100}
-                height={180}
-                className="object-contain transition-transform duration-300 group-hover:scale-105"
-                priority
-              />
-            </div>
+              <div className="relative w-28 h-20 flex items-center justify-center">
+                <Image
+                  src={navData.logo.image}
+                  alt={navData.logo.text} 
+                  width={80}
+                  height={160}
+                  className="object-contain"
+                  priority
+                />
+              </div>
           </Link>
 
           {/* Center: Nav Links */}
-          <nav className="hidden lg:flex items-center gap-1">
-            {NAV.map((item) => {
-              const isActive = pathname === item.href || (item.href.startsWith('/#') && pathname === '/');
-              return (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  onClick={() => handleLinkClick(item.href)}
-                  className={`relative px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
-                    isActive 
-                      ? "text-[#0ea5ff] bg-[#0ea5ff]/10" 
-                      : "text-[#0a2540]/70 hover:text-[#0a2540] hover:bg-[#0a2540]/5"
-                  }`}
-                >
-                  {item.label}
-                  {isActive && (
-                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#0ea5ff]"></div>
-                  )}
-                </Link>
-              );
-            })}
-          </nav>
-
-          {/* Right: Enquire Now */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Link
-              href={navData.cta.href}
-              onClick={() => handleLinkClick(navData.cta.href)}
-              className="inline-flex items-center justify-center h-12 px-6 rounded-xl bg-gradient-to-r from-[#0ea5ff] to-[#0596ea] text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
-            >
-              {navData.cta.text}
-            </Link>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 group"
-            aria-label="Toggle menu"
-          >
-            <span className={`w-6 h-0.5 bg-[#0a2540] rounded-full transition-transform duration-300 ${mobileMenuOpen ? "rotate-45 translate-y-2" : ""}`} />
-            <span className={`w-6 h-0.5 bg-[#0a2540] rounded-full transition-opacity duration-300 ${mobileMenuOpen ? "opacity-0" : ""}`} />
-            <span className={`w-6 h-0.5 bg-[#0a2540] rounded-full transition-transform duration-300 ${mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div 
-        className={`lg:hidden fixed inset-x-0 top-20 bg-white border-t border-[#0a2540]/10 shadow-lg transition-all duration-300 ease-in-out ${
-          mobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
-        }`}
-      >
-        <nav className="flex flex-col py-4 px-6">
-          {NAV.map((item) => {
-            const isActive = pathname === item.href || (item.href.startsWith('/#') && pathname === '/');
-            return (
+          <nav className="hidden md:flex items-center gap-8">
+            {NAV.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
                 onClick={() => handleLinkClick(item.href)}
-                className={`py-4 text-lg font-medium transition-colors border-b border-[#0a2540]/5 last:border-0 ${
-                  isActive 
-                    ? "text-[#0ea5ff]" 
-                    : "text-[#0a2540]/70 hover:text-[#0a2540]"
-                }`}
+                className="relative font-sans text-[15px] font-medium text-[#0a2540]/70 hover:text-[#0a2540] transition-colors group"
               >
                 {item.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#0ea5ff] group-hover:w-full transition-all duration-300" />
               </Link>
-            );
-          })}
+            ))}
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5"
+            aria-label="Toggle menu"
+          >
+            <span className={`w-6 h-0.5 bg-[#0a2540] transition-transform ${mobileMenuOpen ? "rotate-45 translate-y-2" : ""}`} />
+            <span className={`w-6 h-0.5 bg-[#0a2540] transition-opacity ${mobileMenuOpen ? "opacity-0" : ""}`} />
+            <span className={`w-6 h-0.5 bg-[#0a2540] transition-transform ${mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          </button>
+
+          {/* Right: Enquire Now */}
           <Link
             href={navData.cta.href}
             onClick={() => handleLinkClick(navData.cta.href)}
-            className="mt-6 inline-flex items-center justify-center h-12 px-6 rounded-xl bg-gradient-to-r from-[#0ea5ff] to-[#0596ea] text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            className="hidden md:inline-flex items-center justify-center h-11 px-6 rounded-lg bg-[#0ea5ff] text-white text-[14px] font-semibold shadow-sm hover:bg-[#0596ea] hover:shadow-md transition-all"
           >
             {navData.cta.text}
           </Link>
-        </nav>
+        </div>
       </div>
-      
-      {/* Mobile menu overlay */}
+
+      {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div 
-          className="lg:hidden fixed inset-0 bg-black/20 z-[-1] transition-opacity duration-300"
-          onClick={() => setMobileMenuOpen(false)}
-        />
+        <div className="md:hidden bg-white border-t border-[#0a2540]/10">
+          <nav className="flex flex-col py-4 px-6">
+            {NAV.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                onClick={() => handleLinkClick(item.href)}
+                className="py-3 text-[15px] font-medium text-[#0a2540]/70 hover:text-[#0a2540] transition-colors border-b border-[#0a2540]/5 last:border-0"
+              >
+                {item.label}
+              </Link>
+            ))}
+            <Link
+              href={navData.cta.href}
+              onClick={() => handleLinkClick(navData.cta.href)}
+              className="mt-4 inline-flex items-center justify-center h-11 px-6 rounded-lg bg-[#0ea5ff] text-white text-[14px] font-semibold"
+            >
+              {navData.cta.text}
+            </Link>
+          </nav>
+        </div>
       )}
     </header>
   );

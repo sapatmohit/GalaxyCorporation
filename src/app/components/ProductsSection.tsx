@@ -3,6 +3,7 @@
 import productsData from "@/data/products.json";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const PRODUCTS = productsData.categories.map(cat => ({
   id: cat.id,
@@ -12,8 +13,24 @@ const PRODUCTS = productsData.categories.map(cat => ({
 }));
 
 export default function ProductsSection() {
+  const [activeFilter, setActiveFilter] = useState("all");
+  const [filteredProducts, setFilteredProducts] = useState(PRODUCTS);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Get unique categories for filter buttons
+  const categories = ["all", ...PRODUCTS.map(product => product.id)];
+
+  useEffect(() => {
+    setIsMounted(true);
+    if (activeFilter === "all") {
+      setFilteredProducts(PRODUCTS);
+    } else {
+      setFilteredProducts(PRODUCTS.filter(product => product.id === activeFilter));
+    }
+  }, [activeFilter]);
+
   return (
-    <section id="products" className="relative py-20 md:py-28 bg-gradient-to-br from-[#f8f9fa] via-white to-[#e8f4fd]">
+    <section id="products" className="relative py-20 md:py-28 bg-gradient-to-br from-[#f0f9ff] via-white to-[#e0f2fe]">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div 
@@ -34,9 +51,43 @@ export default function ProductsSection() {
           </p>
         </motion.div>
 
+        {/* Category Filters */}
+        <motion.div 
+          className="flex flex-wrap justify-center gap-3 mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          <button
+            onClick={() => setActiveFilter("all")}
+            className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+              activeFilter === "all"
+                ? "bg-[#0ea5ff] text-white shadow-lg"
+                : "bg-white text-[#0a2540] hover:bg-[#0ea5ff]/10 border border-[#0a2540]/10"
+            }`}
+          >
+            All Products
+          </button>
+          
+          {PRODUCTS.map((product) => (
+            <button
+              key={product.id}
+              onClick={() => setActiveFilter(product.id)}
+              className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+                activeFilter === product.id
+                  ? "bg-[#0ea5ff] text-white shadow-lg"
+                  : "bg-white text-[#0a2540] hover:bg-[#0ea5ff]/10 border border-[#0a2540]/10"
+              }`}
+            >
+              {product.name}
+            </button>
+          ))}
+        </motion.div>
+
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {PRODUCTS.map((product, index) => (
+          {filteredProducts.map((product, index) => (
             <motion.div
               key={product.id}
               initial={{ opacity: 0, y: 30 }}
@@ -47,10 +98,10 @@ export default function ProductsSection() {
             >
               <Link
                 href={`/products/${product.id}`}
-                className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer block h-full"
+                className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer block h-full transform transition-transform duration-500 hover:-translate-y-2"
               >
-                {/* Image Container */}
-                <div className="relative h-64 overflow-hidden rounded-3xl">
+                {/* 3D Effect Container */}
+                <div className="relative h-64 overflow-hidden rounded-3xl transform transition-transform duration-500 group-hover:rotate-3 group-hover:scale-105">
                   <img
                     src={product.image}
                     alt={product.name}

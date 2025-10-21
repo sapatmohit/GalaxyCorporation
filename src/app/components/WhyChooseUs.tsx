@@ -2,7 +2,7 @@
 
 import featuresData from "@/data/features.json";
 import { motion } from "framer-motion";
-import { ReactElement } from "react";
+import { ReactElement, useState, useEffect } from "react";
 
 const ICON_MAP: Record<string, ReactElement> = {
   globe: (
@@ -32,9 +32,35 @@ const FEATURES = featuresData.features.map(feature => ({
   icon: ICON_MAP[feature.icon]
 }));
 
+// Animated Counter Component
+function AnimatedCounter({ end, duration = 2000 }: { end: number; duration?: number }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let startTime: number | null = null;
+    
+    const animateCount = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const percentage = Math.min(progress / duration, 1);
+      
+      const currentCount = Math.floor(percentage * end);
+      setCount(currentCount);
+      
+      if (progress < duration) {
+        requestAnimationFrame(animateCount);
+      }
+    };
+    
+    requestAnimationFrame(animateCount);
+  }, [end, duration]);
+
+  return <span>{count}{end >= 100 ? "+" : ""}</span>;
+}
+
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="relative py-20 md:py-28 bg-gradient-to-b from-white via-[#f8f9fa]/30 to-white">
+    <section id="why-us" className="relative py-20 md:py-28 bg-gradient-to-b from-white to-[#f0f9ff]">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div 
@@ -101,7 +127,13 @@ export default function WhyChooseUs() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="text-4xl md:text-5xl font-bold font-heading text-[#0ea5ff] mb-2">{stat.value}</div>
+              <div className="text-4xl md:text-5xl font-bold font-heading text-[#0ea5ff] mb-2">
+                {stat.value.includes('+') ? (
+                  <AnimatedCounter end={parseInt(stat.value)} />
+                ) : (
+                  stat.value
+                )}
+              </div>
               <div className="text-lg text-[#334155]">{stat.label}</div>
               
               {/* Decorative dots */}

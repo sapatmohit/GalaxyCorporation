@@ -2,14 +2,37 @@
 
 import membershipsData from "@/data/memberships.json";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const MEMBERSHIPS = membershipsData.organizations.map(org => ({
   ...org
 }));
 
 export default function MembershipsSection() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Auto-rotate carousel
+  useEffect(() => {
+    if (isHovered) return;
+    
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % MEMBERSHIPS.length);
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, [isHovered]);
+
+  const next = () => {
+    setCurrentIndex((prev) => (prev + 1) % MEMBERSHIPS.length);
+  };
+
+  const prev = () => {
+    setCurrentIndex((prev) => (prev - 1 + MEMBERSHIPS.length) % MEMBERSHIPS.length);
+  };
+
   return (
-    <section className="relative py-20 md:py-28 bg-gradient-to-b from-white via-[#f8f9fa]/30 to-white">
+    <section className="relative py-20 md:py-28 bg-gradient-to-b from-white via-[#f0f9ff]/30 to-white">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div 
@@ -30,45 +53,58 @@ export default function MembershipsSection() {
           </p>
         </motion.div>
 
-        {/* Logos Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 md:gap-8">
-          {MEMBERSHIPS.map((membership, index) => (
-            <motion.div
-              key={membership.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group"
-            >
-              <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white border border-[#0a2540]/5 hover:border-[#0ea5ff]/30 hover:shadow-xl transition-all duration-300 h-full">
-                {/* Logo Container */}
-                <div className="relative w-24 h-24 mb-5 flex items-center justify-center p-3 rounded-xl bg-[#f8f9fa] border border-[#0a2540]/5 group-hover:border-[#0ea5ff]/20 transition-all duration-300">
-                  {/* Placeholder - Replace with actual logo */}
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="text-[#0ea5ff] font-heading font-bold text-base leading-tight">
+        {/* Logo Carousel */}
+        <div 
+          className="relative overflow-hidden py-8"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          {/* Carousel Container */}
+          <div className="relative h-32 flex items-center">
+            {/* Visible Logos */}
+            <div className="flex gap-8 animate-pulse">
+              {[...MEMBERSHIPS, ...MEMBERSHIPS].map((membership, index) => (
+                <motion.div
+                  key={`${membership.id}-${index}`}
+                  className="flex-shrink-0 w-48 h-24 flex items-center justify-center bg-white rounded-2xl border border-[#0a2540]/5 shadow-md hover:shadow-lg transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="text-center px-4">
+                    <div className="text-[#0a2540] font-bold text-lg mb-1">
                       {membership.name}
                     </div>
-                    {/* When you have logos, replace above div with:
-                    <img
-                      src={membership.logo}
-                      alt={membership.name}
-                      className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                    />
-                    */}
+                    <div className="text-[#334155] text-xs">
+                      {membership.description}
+                    </div>
                   </div>
-                </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
 
-                {/* Name */}
-                <h3 className="text-lg font-bold font-heading text-[#0a2540] mb-2 group-hover:text-[#0ea5ff] transition-colors duration-300">
-                  {membership.name}
-                </h3>
-                <p className="text-[#334155] text-sm leading-relaxed">
-                  {membership.description}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+          {/* Navigation Arrows */}
+          <button
+            onClick={prev}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-[#0ea5ff] hover:text-white transition-all duration-300 z-10"
+            aria-label="Previous organizations"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-[#0ea5ff] hover:text-white transition-all duration-300 z-10"
+            aria-label="Next organizations"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
 
         {/* Trust Badge */}

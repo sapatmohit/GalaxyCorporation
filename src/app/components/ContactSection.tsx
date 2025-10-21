@@ -26,7 +26,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative py-20 md:py-28 bg-gradient-to-b from-white via-[#f8f9fa]/30 to-white">
+    <section id="contact" className="relative py-20 md:py-28 bg-gradient-to-b from-white via-[#f0f9ff]/30 to-white">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div 
@@ -152,7 +152,7 @@ export default function ContactSection() {
 
             {/* Map */}
             <motion.div 
-              className="rounded-3xl overflow-hidden shadow-xl"
+              className="rounded-3xl overflow-hidden shadow-xl h-96"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -161,13 +161,13 @@ export default function ContactSection() {
               <iframe
                 src={contactData.map.embedUrl}
                 width="100%"
-                height="350"
+                height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Galaxy Corporation Location"
-                className="w-full"
+                className="w-full h-full"
               />
             </motion.div>
           </motion.div>
@@ -276,6 +276,21 @@ export default function ContactSection() {
                 Send Enquiry
               </motion.button>
             </form>
+            
+            {/* Contact Banner */}
+            <div className="mt-8 p-5 rounded-2xl bg-gradient-to-r from-[#0ea5ff]/10 to-[#0596ea]/10 border border-[#0ea5ff]/20">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-[#0ea5ff]/20 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[#0ea5ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#0a2540]">Need immediate assistance?</h4>
+                  <p className="text-[#334155]">Call us at <a href="tel:+912012345678" className="text-[#0ea5ff] font-semibold hover:underline">+91 20 1234 5678</a></p>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 "use client";
 
 import featuresData from "@/data/features.json";
-import { ReactElement } from "react";
 import { motion } from "framer-motion";
+import { ReactElement, useEffect, useState } from "react";
 
 const ICON_MAP: Record<string, ReactElement> = {
   globe: (
@@ -27,7 +27,14 @@ const ICON_MAP: Record<string, ReactElement> = {
   ),
 };
 
-const FEATURES = featuresData.features.map(feature => ({
+interface Feature {
+  id: number;
+  icon: ReactElement;
+  title: string;
+  description: string;
+}
+
+const FEATURES: Feature[] = featuresData.features.map(feature => ({
   ...feature,
   icon: ICON_MAP[feature.icon]
 }));
@@ -60,7 +67,7 @@ function AnimatedCounter({ end, duration = 2000 }: { end: number; duration?: num
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="relative bg-gradient-to-b from-white via-[#f8f9fa]/50 to-white py-16 md:py-24">
+    <section id="why-us" className="relative bg-white py-16 md:py-24">
       <div className="mx-auto max-w-[1200px] px-6">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -76,8 +83,8 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {FEATURES.map((feature, index) => (
             <motion.div
-              key={index}
-              className="group relative bg-white/60 backdrop-blur-md rounded-xl p-6 hover:bg-white/80 hover:shadow-xl hover:shadow-[#0ea5ff]/10 transition-all duration-300 border border-white/20 hover:border-[#0ea5ff]/30"
+              key={feature.id}
+              className="group relative bg-white rounded-xl p-6 hover:bg-white hover:shadow-xl hover:shadow-[#0ea5ff]/10 transition-all duration-300 border border-white hover:border-[#0ea5ff]/30"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -108,7 +115,13 @@ export default function WhyChooseUs() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="text-[36px] md:text-[42px] font-heading font-bold text-[#0ea5ff]">{stat.value}</div>
+              <div className="text-[36px] md:text-[42px] font-heading font-bold text-[#0ea5ff]">
+                {stat.value.includes('+') ? (
+                  <AnimatedCounter end={parseInt(stat.value)} />
+                ) : (
+                  stat.value
+                )}
+              </div>
               <div className="text-[14px] text-[#334155] mt-1">{stat.label}</div>
             </motion.div>
           ))}

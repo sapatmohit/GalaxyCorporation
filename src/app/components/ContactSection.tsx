@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
 import contactData from "@/data/contact.json";
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -148,7 +148,7 @@ export default function ContactSection() {
 
           {/* Right: Enquiry Form */}
           <motion.div 
-            className="bg-white/70 backdrop-blur-lg rounded-2xl p-8 md:p-10 border border-white/30 shadow-xl shadow-black/5"
+            className="bg-white rounded-2xl p-8 md:p-10 border border-white shadow-xl"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -252,7 +252,7 @@ export default function ContactSection() {
             </form>
             
             {/* Contact Banner */}
-            <div className="mt-8 p-5 rounded-2xl bg-gradient-to-r from-[#0ea5ff]/10 to-[#0596ea]/10 border border-[#0ea5ff]/20">
+            <div className="mt-8 p-5 rounded-2xl bg-white border border-[#0ea5ff]/20">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-xl bg-[#0ea5ff]/20 flex items-center justify-center">
                   <svg className="w-6 h-6 text-[#0ea5ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,10 +1,18 @@
 "use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
 import productsData from "@/data/products.json";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
-const PRODUCTS = productsData.categories.map(cat => ({
+interface Product {
+  id: string;
+  name: string;
+  image: string;
+  description: string;
+}
+
+const PRODUCTS: Product[] = productsData.categories.map(cat => ({
   id: cat.id,
   name: cat.name,
   image: cat.image,
@@ -13,7 +21,7 @@ const PRODUCTS = productsData.categories.map(cat => ({
 
 export default function ProductsSection() {
   const [activeFilter, setActiveFilter] = useState("all");
-  const [filteredProducts, setFilteredProducts] = useState(PRODUCTS);
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>(PRODUCTS);
   const [isMounted, setIsMounted] = useState(false);
 
   // Get unique categories for filter buttons
@@ -29,7 +37,7 @@ export default function ProductsSection() {
   }, [activeFilter]);
 
   return (
-    <section id="products" className="relative bg-gradient-to-br from-[#f8f9fa] via-white to-[#e8f4fd] py-16 md:py-24">
+    <section id="products" className="relative bg-white py-16 md:py-24">
       <div className="mx-auto max-w-[1200px] px-6">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -77,7 +85,7 @@ export default function ProductsSection() {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {PRODUCTS.map((product, index) => (
+          {filteredProducts.map((product, index) => (
             <motion.div
               key={product.id}
               initial={{ opacity: 0, y: 50 }}
@@ -87,7 +95,7 @@ export default function ProductsSection() {
             >
               <Link
                 href={`/products/${product.id}`}
-                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#0ea5ff]/20 transition-all duration-500 cursor-pointer block backdrop-blur-sm bg-white/10 border border-white/20"
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#0ea5ff]/20 transition-all duration-500 cursor-pointer block bg-white border border-white"
               >
               {/* Image */}
               <div className="relative h-[320px] overflow-hidden">

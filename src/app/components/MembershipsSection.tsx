@@ -1,6 +1,17 @@
-import membershipsData from "@/data/memberships.json";
+"use client";
 
-const MEMBERSHIPS = membershipsData.organizations.map(org => ({
+import membershipsData from "@/data/memberships.json";
+import { useEffect, useState } from "react";
+
+interface Membership {
+  id: number;
+  name: string;
+  fullName: string;
+  logo: string;
+  description: string;
+}
+
+const MEMBERSHIPS: Membership[] = membershipsData.organizations.map(org => ({
   ...org
 }));
 
@@ -45,10 +56,10 @@ export default function MembershipsSection() {
           {MEMBERSHIPS.map((membership) => (
             <div
               key={membership.id}
-              className="group flex flex-col items-center text-center p-6 rounded-xl bg-white/50 backdrop-blur-sm border border-white/30 hover:bg-white/70 hover:shadow-lg transition-all duration-300"
+              className="group flex flex-col items-center text-center p-6 rounded-xl bg-white border border-white hover:bg-white hover:shadow-lg transition-all duration-300"
             >
               {/* Logo Container */}
-              <div className="relative w-32 h-32 mb-4 flex items-center justify-center p-4 rounded-2xl bg-[#f8f9fa] border border-[#0a2540]/5 group-hover:border-[#0ea5ff]/30 group-hover:shadow-lg transition-all duration-300">
+              <div className="relative w-32 h-32 mb-4 flex items-center justify-center p-4 rounded-2xl bg-white border border-[#0a2540]/5 group-hover:border-[#0ea5ff]/30 group-hover:shadow-lg transition-all duration-300">
                 {/* Placeholder - Replace with actual logo */}
                 <div className="w-full h-full flex items-center justify-center">
                   <div className="text-[#0ea5ff] font-heading font-bold text-[18px] leading-tight">
@@ -77,7 +88,7 @@ export default function MembershipsSection() {
 
         {/* Trust Badge */}
         <div className="mt-12 md:mt-16 text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/60 backdrop-blur-md border border-white/30 shadow-lg">
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white border border-white shadow-lg">
             <svg className="w-5 h-5 text-[#0ea5ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>

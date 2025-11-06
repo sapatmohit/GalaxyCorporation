@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
 import heroData from "@/data/hero.json";
+import { motion } from "framer-motion";
+import { useState } from "react";
 
 const IMAGES = heroData.slides.map(slide => slide.image);
 
@@ -14,7 +14,7 @@ export default function PremiumHero() {
   const goTo = (index: number) => setCurrent(index);
 
   return (
-    <section className="relative bg-gradient-to-br from-[#f8f9fa] via-white to-[#e3f2fd] pt-[80px] pb-16">
+    <section className="relative bg-white pt-[80px] pb-16">
       <div className="mx-auto max-w-[1200px] px-6 py-12">
         <div className="relative">
           <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-8 items-center">

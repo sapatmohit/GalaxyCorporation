@@ -1,4 +1,7 @@
+"use client";
+
 import siteConfig from "@/data/siteConfig.json";
+import { useState } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,13 +16,13 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#0a2540] py-6">
+    <footer className="bg-white py-6 border-t border-[#0a2540]/10">
       <div className="mx-auto max-w-[1200px] px-6">
-        <p className="text-center text-[14px] text-white/80">
+        <p className="text-center text-[14px] text-[#0a2540]/80">
           Copyrights © {currentYear} {siteConfig.footer.copyrightText}{" "}
           <a 
             href={siteConfig.company.website}
-            className="text-white hover:text-[#0ea5ff] transition-colors"
+            className="text-[#0a2540] hover:text-[#0ea5ff] transition-colors"
             target="_blank"
             rel="noopener noreferrer"
           >

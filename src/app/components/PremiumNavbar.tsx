@@ -41,11 +41,11 @@ export default function PremiumNavbar() {
           : "bg-white/70 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="mx-auto max-w-[80%] px-6">
         <div className="flex items-center justify-between h-20">
           {/* Left: Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-28 h-20 flex items-center justify-center">
+              <div className=" w-28 h-20 flex items-center justify-center">
                 <Image
                   src={navData.logo.image}
                   alt={navData.logo.text} 

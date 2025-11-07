@@ -40,7 +40,7 @@ export default function MembershipsSection() {
 
   return (
     <section className="relative bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="mx-auto max-w-[80%] px-6">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-[36px] md:text-[48px] font-heading font-bold text-[#0a2540] mb-4">
@@ -60,19 +60,11 @@ export default function MembershipsSection() {
             >
               {/* Logo Container */}
               <div className="relative w-32 h-32 mb-4 flex items-center justify-center p-4 rounded-2xl bg-white border border-[#0a2540]/5 group-hover:border-[#0ea5ff]/30 group-hover:shadow-lg transition-all duration-300">
-                {/* Placeholder - Replace with actual logo */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-[#0ea5ff] font-heading font-bold text-[18px] leading-tight">
-                    {membership.name}
-                  </div>
-                  {/* When you have logos, replace above div with:
-                  <img
-                    src={membership.logo}
-                    alt={membership.name}
-                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
-                  />
-                  */}
-                </div>
+                <img
+                  src={membership.logo}
+                  alt={membership.fullName || membership.name}
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                />
               </div>
 
               {/* Name */}

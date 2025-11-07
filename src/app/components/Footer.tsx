@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-white py-6 border-t border-[#0a2540]/10">
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="mx-auto max-w-[80%] px-6">
         <p className="text-center text-[14px] text-[#0a2540]/80">
           Copyrights © {currentYear} {siteConfig.footer.copyrightText}{" "}
           <a 

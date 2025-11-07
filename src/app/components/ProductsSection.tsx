@@ -38,7 +38,7 @@ export default function ProductsSection() {
 
   return (
     <section id="products" className="relative bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="mx-auto max-w-[80%] px-6">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-[36px] md:text-[48px] font-heading font-bold text-[#0a2540] mb-4">

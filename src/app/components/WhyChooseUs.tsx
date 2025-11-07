@@ -68,7 +68,7 @@ function AnimatedCounter({ end, duration = 2000 }: { end: number; duration?: num
 export default function WhyChooseUs() {
   return (
     <section id="why-us" className="relative bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-[1200px] px-6">
+      <div className="mx-auto max-w-[80%] px-6">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-[32px] md:text-[42px] font-heading font-bold text-[#0a2540] mb-4">

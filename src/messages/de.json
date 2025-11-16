@@ -285,5 +285,10 @@
 		"countriesServed": "Bediente Länder",
 		"productCategories": "Produktkategorien"
 	},
-	"language": "Sprache"
+	"language": "Sprache",
+	"NotFound": {
+		"title": "Seite nicht gefunden",
+		"description": "Entschuldigung, die von Ihnen gesuchte Seite existiert nicht oder wurde verschoben.",
+		"goHome": "Zurück zur Startseite"
+	}
 }

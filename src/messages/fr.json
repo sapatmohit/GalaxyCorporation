@@ -287,5 +287,10 @@
     "countriesServed": "Pays desservis",
     "productCategories": "Catégories de produits"
   },
-  "language": "Langue"
+  "language": "Langue",
+  "NotFound": {
+    "title": "Page non trouvée",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "goHome": "Retour à l'accueil"
+  }
 }

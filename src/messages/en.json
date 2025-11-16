@@ -287,5 +287,10 @@
 		"countriesServed": "Countries Served",
 		"productCategories": "Product Categories"
 	},
-	"language": "Language"
+	"language": "Language",
+	"NotFound": {
+		"title": "Page Not Found",
+		"description": "Sorry, the page you are looking for does not exist or has been moved.",
+		"goHome": "Go Back Home"
+	}
 }

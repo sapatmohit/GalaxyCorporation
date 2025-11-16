@@ -4,7 +4,6 @@ import { routing } from './src/i18n/routing';
 export default createMiddleware(routing);
 
 export const config = {
-  matcher: [
-    '/((?!api|_next|_vercel|.*\\..*|favicon.ico).*)',
-  ],
+  // Skip all paths that should not be internationalized
+  matcher: ['/((?!api|_next|_vercel|.*\..*).*)'],
 };

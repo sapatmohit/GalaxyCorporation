@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  galaxy-corporation:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: galaxy-corporation
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped

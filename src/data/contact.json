@@ -13,18 +13,16 @@
   "contactInfo": {
     "address": {
       "line1": "Galaxy Corporation",
-      "line2": "123 Business Hub, Pune - 411001",
-      "line3": "Maharashtra, India",
+      "line2": "Block No.6, 2nd Floor, Supreme Industrial Premises, Satara Road",
+      "line3": "Pune-411009, Maharashtra, India",
       "icon": "map"
     },
     "email": {
-      "primary": "info@galaxycorp.com",
-      "secondary": "sales@galaxycorp.com",
+      "primary": "info@galaxycorporation.co.in",
       "icon": "mail"
     },
     "phone": {
-      "primary": "+91 20 1234 5678",
-      "secondary": "+91 98765 43210",
+      "primary": "+91 020 79627678",
       "icon": "phone"
     },
     "businessHours": {

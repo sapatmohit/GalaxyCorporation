@@ -8,42 +8,84 @@
       "name": "Rajesh Kumar",
       "position": "Managing Director",
       "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop",
-      "bio": "Leading Galaxy Corporation with 20+ years of experience in agricultural exports and international trade."
+      "bio": "Leading Galaxy Corporation with 20+ years of experience in agricultural exports and international trade.",
+      "email": "rajesh.kumar@galaxycorporation.co.in",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "linkedin": "#",
+        "instagram": "#"
+      }
     },
     {
       "id": 2,
       "name": "Priya Sharma",
       "position": "Export Manager",
       "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop",
-      "bio": "Expert in logistics coordination and ensuring timely delivery to global markets."
+      "bio": "Expert in logistics coordination and ensuring timely delivery to global markets.",
+      "email": "priya.sharma@galaxycorporation.co.in",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "linkedin": "#",
+        "instagram": "#"
+      }
     },
     {
       "id": 3,
       "name": "Amit Patel",
       "position": "Quality Control Head",
       "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
-      "bio": "Ensuring all products meet international quality standards with meticulous testing and certification."
+      "bio": "Ensuring all products meet international quality standards with meticulous testing and certification.",
+      "email": "amit.patel@galaxycorporation.co.in",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "linkedin": "#",
+        "instagram": "#"
+      }
     },
     {
       "id": 4,
       "name": "Sneha Desai",
       "position": "Procurement Manager",
       "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop",
-      "bio": "Building strong relationships with farmers and suppliers across India for premium sourcing."
+      "bio": "Building strong relationships with farmers and suppliers across India for premium sourcing.",
+      "email": "sneha.desai@galaxycorporation.co.in",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "linkedin": "#",
+        "instagram": "#"
+      }
     },
     {
       "id": 5,
       "name": "Vikram Singh",
       "position": "Operations Director",
       "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop",
-      "bio": "Streamlining operations and ensuring efficient processing and packaging workflows."
+      "bio": "Streamlining operations and ensuring efficient processing and packaging workflows.",
+      "email": "vikram.singh@galaxycorporation.co.in",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "linkedin": "#",
+        "instagram": "#"
+      }
     },
     {
       "id": 6,
       "name": "Kavita Reddy",
       "position": "Business Development",
       "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop",
-      "bio": "Expanding our global footprint and establishing new partnerships in international markets."
+      "bio": "Expanding our global footprint and establishing new partnerships in international markets.",
+      "email": "kavita.reddy@galaxycorporation.co.in",
+      "social": {
+        "facebook": "#",
+        "twitter": "#",
+        "linkedin": "#",
+        "instagram": "#"
+      }
     }
   ]
 }

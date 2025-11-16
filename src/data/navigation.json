@@ -1,7 +1,7 @@
 {
   "logo": {
     "text": "Galaxy Corporation",
-    "image": "/logo.png"
+    "image": "/Logo.png"
   },
   "mainNav": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "label": "About",
-      "href": "/#about"
+      "href": "/about"
     },
     {
       "label": "Team",
@@ -22,11 +22,11 @@
     },
     {
       "label": "Contact",
-      "href": "/#contact"
+      "href": "/contact"
     }
   ],
   "cta": {
     "text": "Enquire Now",
-    "href": "/#contact"
+    "href": "/contact"
   }
 }

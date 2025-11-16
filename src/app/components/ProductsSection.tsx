@@ -37,21 +37,21 @@ export default function ProductsSection() {
   }, [activeFilter]);
 
   return (
-    <section id="products" className="relative bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-[80%] px-6">
+    <section id="products" className="relative bg-white py-12 sm:py-16 md:py-24">
+      <div className="mx-auto w-full px-4 sm:px-6">
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-[36px] md:text-[48px] font-heading font-bold text-[#0a2540] mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-[36px] md:text-[48px] font-heading font-bold text-[#0a2540] mb-3 sm:mb-4">
             {productsData.title} <span className="text-[#0ea5ff]">{productsData.titleHighlight}</span>
           </h2>
-          <p className="text-[16px] text-[#334155] max-w-[680px] mx-auto">
+          <p className="text-sm sm:text-[16px] text-[#334155] max-w-[680px] mx-auto px-2">
             {productsData.subtitle}
           </p>
         </div>
 
         {/* Category Filters */}
         <motion.div 
-          className="flex flex-wrap justify-center gap-3 mb-12"
+          className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -59,7 +59,7 @@ export default function ProductsSection() {
         >
           <button
             onClick={() => setActiveFilter("all")}
-            className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+            className={`px-3 py-1.5 sm:px-5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 ${
               activeFilter === "all"
                 ? "bg-[#0ea5ff] text-white shadow-lg"
                 : "bg-white text-[#0a2540] hover:bg-[#0ea5ff]/10 border border-[#0a2540]/10"
@@ -72,7 +72,7 @@ export default function ProductsSection() {
             <button
               key={product.id}
               onClick={() => setActiveFilter(product.id)}
-              className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+              className={`px-3 py-1.5 sm:px-5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 ${
                 activeFilter === product.id
                   ? "bg-[#0ea5ff] text-white shadow-lg"
                   : "bg-white text-[#0a2540] hover:bg-[#0ea5ff]/10 border border-[#0a2540]/10"
@@ -84,7 +84,7 @@ export default function ProductsSection() {
         </motion.div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {filteredProducts.map((product, index) => (
             <motion.div
               key={product.id}
@@ -95,10 +95,10 @@ export default function ProductsSection() {
             >
               <Link
                 href={`/products/${product.id}`}
-                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#0ea5ff]/20 transition-all duration-500 cursor-pointer block bg-white border border-white"
+                className="group relative overflow-hidden rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#0ea5ff]/20 transition-all duration-500 cursor-pointer block bg-white border border-white"
               >
               {/* Image */}
-              <div className="relative h-[320px] overflow-hidden">
+              <div className="relative h-[240px] sm:h-[320px] overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -109,17 +109,17 @@ export default function ProductsSection() {
               </div>
 
               {/* Content Overlay */}
-              <div className="absolute inset-0 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-6">
                 {/* Category Name */}
-                <h3 className="text-[24px] font-heading font-semibold text-white mb-2">
+                <h3 className="text-xl sm:text-[24px] font-heading font-semibold text-white mb-1 sm:mb-2">
                   {product.name}
                 </h3>
-                <p className="text-[14px] text-white/80 mb-4">
+                <p className="text-xs sm:text-[14px] text-white/80 mb-3 sm:mb-4">
                   {product.description}
                 </p>
-                <div className="inline-flex items-center gap-2 text-[14px] font-semibold text-[#0ea5ff] group-hover:gap-3 transition-all">
+                <div className="inline-flex items-center gap-1 sm:gap-2 text-xs sm:text-[14px] font-semibold text-[#0ea5ff] group-hover:gap-3 transition-all">
                   Explore Products
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -130,13 +130,13 @@ export default function ProductsSection() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-12 md:mt-16">
-          <p className="text-[15px] text-[#334155] mb-6">
+        <div className="text-center mt-8 sm:mt-12 md:mt-16">
+          <p className="text-sm sm:text-[15px] text-[#334155] mb-4 sm:mb-6">
             Looking for something specific? We deal in 25+ product categories.
           </p>
           <Link
             href="/products"
-            className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-[#0ea5ff] text-white text-[15px] font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
+            className="inline-flex items-center justify-center h-10 sm:h-12 px-6 sm:px-8 rounded-full bg-[#0ea5ff] text-white text-sm sm:text-[15px] font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
           >
             View All Products
           </Link>

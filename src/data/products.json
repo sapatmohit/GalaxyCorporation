@@ -6,7 +6,7 @@
     {
       "id": "pulses-legumes",
       "name": "Pulses & Legumes",
-      "image": "https://images.unsplash.com/photo-1587049352846-4a222e784466?q=80&w=800&auto=format&fit=crop",
+      "image": "https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2019/10/shutterstock_716540269.jpg",
       "description": "High-quality pulses and legumes sourced from trusted suppliers",
       "items": [
         "Chickpeas (Kabuli & Desi)",
@@ -59,58 +59,9 @@
       ]
     },
     {
-      "id": "oil-seeds",
-      "name": "Oil Seeds",
-      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?q=80&w=800&auto=format&fit=crop",
-      "description": "Premium oil seeds for various industrial and culinary uses",
-      "items": [
-        "Sesame Seeds (White & Black)",
-        "Sunflower Seeds",
-        "Peanuts",
-        "Mustard Seeds",
-        "Castor Seeds",
-        "Flax Seeds",
-        "Niger Seeds"
-      ],
-      "products": [
-        {
-          "name": "White Sesame Seeds",
-          "description": "Natural, unhulled seeds with rich nutty flavor"
-        },
-        {
-          "name": "Black Sesame Seeds",
-          "description": "Premium quality seeds for oil extraction and culinary use"
-        },
-        {
-          "name": "Sunflower Seeds",
-          "description": "High oil content, perfect for extraction and snacking"
-        },
-        {
-          "name": "Peanuts (Groundnuts)",
-          "description": "Bold and java varieties available"
-        },
-        {
-          "name": "Mustard Seeds (Yellow & Black)",
-          "description": "Pungent seeds for oil and spice applications"
-        },
-        {
-          "name": "Castor Seeds",
-          "description": "Industrial grade seeds for oil extraction"
-        },
-        {
-          "name": "Flax Seeds (Linseed)",
-          "description": "Rich in omega-3 fatty acids"
-        },
-        {
-          "name": "Niger Seeds",
-          "description": "Bird feed and oil extraction grade"
-        }
-      ]
-    },
-    {
       "id": "spices",
       "name": "Spices",
-      "image": "https://images.unsplash.com/photo-1596040033229-a0b55ee88da5?q=80&w=800&auto=format&fit=crop",
+      "image": "https://cdn1.healthians.com/blog/wp-content/uploads/2023/10/shutterstock_225001330-scaled.jpg",
       "description": "Authentic spices with rich aroma and superior quality",
       "items": [
         "Turmeric (Powder & Whole)",
@@ -176,7 +127,7 @@
     {
       "id": "cereals",
       "name": "Cereals",
-      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=800&auto=format&fit=crop",
+      "image": "https://apeda.gov.in/sites/default/files/images_plain_field/millets.jpg",
       "description": "Premium grains including basmati rice, wheat, and millets",
       "items": [
         "Rice Basmati",
@@ -227,68 +178,9 @@
       ]
     },
     {
-      "id": "fresh-vegetables",
-      "name": "Fresh Vegetables",
-      "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=800&auto=format&fit=crop",
-      "description": "Farm-fresh vegetables exported with care and precision",
-      "items": [
-        "Onions (Red & White)",
-        "Potatoes",
-        "Tomatoes",
-        "Green Chillies",
-        "Bell Peppers",
-        "Okra",
-        "Eggplant",
-        "Cabbage",
-        "Cauliflower"
-      ],
-      "products": [
-        {
-          "name": "Red Onions",
-          "description": "Sharp flavor, ideal for cooking and salads"
-        },
-        {
-          "name": "White Onions",
-          "description": "Mild, sweet variety"
-        },
-        {
-          "name": "Potatoes",
-          "description": "Multiple varieties for different uses"
-        },
-        {
-          "name": "Tomatoes",
-          "description": "Fresh, firm tomatoes"
-        },
-        {
-          "name": "Green Chillies",
-          "description": "Hot and medium heat varieties"
-        },
-        {
-          "name": "Bell Peppers (Capsicum)",
-          "description": "Green, red, and yellow varieties"
-        },
-        {
-          "name": "Okra (Lady Finger)",
-          "description": "Fresh, tender okra"
-        },
-        {
-          "name": "Eggplant (Brinjal)",
-          "description": "Various sizes and varieties"
-        },
-        {
-          "name": "Cabbage",
-          "description": "Fresh, crisp heads"
-        },
-        {
-          "name": "Cauliflower",
-          "description": "White, firm florets"
-        }
-      ]
-    },
-    {
       "id": "dry-fruits-nuts",
       "name": "Dry Fruits & Nuts",
-      "image": "https://images.unsplash.com/photo-1599599810769-bcde5a160d32?q=80&w=800&auto=format&fit=crop",
+      "image": "https://www.theabsolutenuts.in/cdn/shop/files/Untitled-1_c715ab07-dc44-4694-aa47-3f6bea253aa3.jpg?v=1728396494",
       "description": "Premium quality dry fruits and nuts for global markets",
       "items": [
         "Almonds",
@@ -336,6 +228,76 @@
         {
           "name": "Figs",
           "description": "Dried figs with natural sweetness"
+        }
+      ]
+    },
+    {
+      "id": "aluminum-domes",
+      "name": "Aluminum Domes",
+      "image": "https://www.elsont.com/packs/media/images/products/dome_roofs/Dome_Schweiz-14e97ecdceee5cd0dee0722b1ae9e962.jpg",
+      "description": "High-quality aluminum domes for industrial and commercial applications",
+      "items": [
+        "External Domes",
+        "Internal Domes",
+        "Custom Sizes"
+      ],
+      "products": [
+        {
+          "name": "External Aluminum Domes",
+          "description": "Durable external domes for storage tanks and industrial applications"
+        },
+        {
+          "name": "Internal Aluminum Domes",
+          "description": "Precision-engineered internal domes for specialized equipment"
+        },
+        {
+          "name": "Custom Aluminum Domes",
+          "description": "Tailored solutions for specific industrial requirements"
+        }
+      ]
+    },
+    {
+      "id": "petroleum-products",
+      "name": "Petroleum Products",
+      "image": "https://www.thoughtco.com/thmb/F_YDenWISaMxQxKnuA6O03I4REo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-489082308-5ab516c931283400370473f3.jpg",
+      "description": "Premium petroleum products including LPG for industrial and domestic use",
+      "items": [
+        "LPG (Liquefied Petroleum Gas)"
+      ],
+      "products": [
+        {
+          "name": "LPG (Liquefied Petroleum Gas)",
+          "description": "High-purity LPG for domestic and industrial applications"
+        }
+      ]
+    },
+    {
+      "id": "fertilizers",
+      "name": "Fertilizers",
+      "image": "https://www.topraq.ai/wp-content/uploads/2025/02/Taban-Gubresi-1-1.png",
+      "description": "Comprehensive range of fertilizers for agricultural enhancement",
+      "items": [
+        "Nitrogenous Fertilizers",
+        "Phosphatic Fertilizers",
+        "Potassic Fertilizers",
+        "Complex Fertilizers"
+      ],
+      "products": [
+        {
+          "name": "Nitrogenous Fertilizers",
+          "description": "Essential nitrogen supplements for plant growth and development"
+        },
+        {
+          "name": "Phosphatic Fertilizers",
+          "description": "Phosphate-rich fertilizers for root development and flowering"
+        },
+        {
+          "name": "Potassic Fertilizers",
+          "description": "Potassium-based fertilizers for improved crop quality and disease resistance"
+        },
+        {
+          "name": "Complex Fertilizers",
+          "description": "Multi-nutrient formulations for balanced plant nutrition"
         }
       ]
     }

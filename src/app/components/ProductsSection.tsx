@@ -1,8 +1,9 @@
 "use client";
 
 import productsData from "@/data/products.json";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface Product {
@@ -20,6 +21,7 @@ const PRODUCTS: Product[] = productsData.categories.map(cat => ({
 }));
 
 export default function ProductsSection() {
+  const t = useTranslations('common.products');
   const [activeFilter, setActiveFilter] = useState("all");
   const [filteredProducts, setFilteredProducts] = useState<Product[]>(PRODUCTS);
   const [isMounted, setIsMounted] = useState(false);
@@ -42,10 +44,10 @@ export default function ProductsSection() {
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-[36px] md:text-[48px] font-heading font-bold text-[#0a2540] mb-3 sm:mb-4">
-            {productsData.title} <span className="text-[#0ea5ff]">{productsData.titleHighlight}</span>
+            {t('title')} <span className="text-[#0ea5ff]">{t('titleHighlight')}</span>
           </h2>
           <p className="text-sm sm:text-[16px] text-[#334155] max-w-[680px] mx-auto px-2">
-            {productsData.subtitle}
+            {t('subtitle')}
           </p>
         </div>
 
@@ -65,7 +67,7 @@ export default function ProductsSection() {
                 : "bg-white text-[#0a2540] hover:bg-[#0ea5ff]/10 border border-[#0a2540]/10"
             }`}
           >
-            All Products
+            {t('allProducts')}
           </button>
           
           {PRODUCTS.map((product) => (
@@ -118,7 +120,7 @@ export default function ProductsSection() {
                   {product.description}
                 </p>
                 <div className="inline-flex items-center gap-1 sm:gap-2 text-xs sm:text-[14px] font-semibold text-[#0ea5ff] group-hover:gap-3 transition-all">
-                  Explore Products
+                  {t('exploreProducts')}
                   <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -132,13 +134,13 @@ export default function ProductsSection() {
         {/* CTA Section */}
         <div className="text-center mt-8 sm:mt-12 md:mt-16">
           <p className="text-sm sm:text-[15px] text-[#334155] mb-4 sm:mb-6">
-            Looking for something specific? We deal in 25+ product categories.
+            {t('lookingForSpecific')}
           </p>
           <Link
             href="/products"
             className="inline-flex items-center justify-center h-10 sm:h-12 px-6 sm:px-8 rounded-full bg-[#0ea5ff] text-white text-sm sm:text-[15px] font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
           >
-            View All Products
+            {t('viewAllProducts')}
           </Link>
         </div>
       </div>

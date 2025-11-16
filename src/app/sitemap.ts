@@ -1,42 +1,36 @@
 import { MetadataRoute } from 'next';
+import { routing } from '@/i18n/routing';
+
+const baseUrl = 'https://galaxycorporation.co.in';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: 'https://galaxycorporation.co.in',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
-    },
-    {
-      url: 'https://galaxycorporation.co.in/#products',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://galaxycorporation.co.in/#about',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    },
-    {
-      url: 'https://galaxycorporation.co.in/#team',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    },
-    {
-      url: 'https://galaxycorporation.co.in/#contact',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    },
-    {
-      url: 'https://galaxycorporation.co.in/products',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
+  const routes = [
+    { path: '', priority: 1, changeFrequency: 'yearly' as const },
+    { path: '/products', priority: 0.7, changeFrequency: 'weekly' as const },
+    { path: '/about', priority: 0.5, changeFrequency: 'yearly' as const },
+    { path: '/contact', priority: 0.5, changeFrequency: 'yearly' as const },
   ];
+
+  const sitemapEntries: MetadataRoute.Sitemap = [];
+
+  routes.forEach((route) => {
+    routing.locales.forEach((locale) => {
+      sitemapEntries.push({
+        url: `${baseUrl}/${locale}${route.path}`,
+        lastModified: new Date(),
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
+        alternates: {
+          languages: Object.fromEntries(
+            routing.locales.map((loc) => [
+              loc,
+              `${baseUrl}/${loc}${route.path}`,
+            ])
+          ),
+        },
+      });
+    });
+  });
+
+  return sitemapEntries;
 }

@@ -1,0 +1,291 @@
+{
+  "metaTitle": "Galaxy Corporation - Exportateurs Agro Mondiaux",
+  "metaDescription": "Exportateur et Négociant de Premier Plan pour les Produits Agro en Inde",
+  "welcome": "Bienvenue sur notre site web",
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "team": "Équipe",
+    "contact": "Contact",
+    "enquireNow": "Demander maintenant"
+  },
+  "hero": {
+    "title": "Bienvenue à",
+    "highlight": "Galaxy Corporation",
+    "description1": "Galaxy Corporation est l'un des principaux exportateurs et négociants de produits agro en Inde. L'entreprise exporte des produits agro vers des clients du monde entier. Nous sommes situés à Pune, qui est un centre d'affaires majeur pour les produits agro. L'entreprise traite une large gamme de produits tels que les graines oléagineuses, les céréales, les épices, les légumes frais, les fruits frais, les légumes surgelés, les fruits surgelés, les fruits secs, les légumineuses, etc.",
+    "description2": "La force principale de l'entreprise est son réseau d'approvisionnement solide, le stockage, la transformation et l'approvisionnement de toutes les denrées agricoles qui s'étend à tous les centres de production importants à travers l'Inde. Nous avons l'expertise et les ressources nécessaires pour répondre à toute demande de denrées agricoles.",
+    "ctaText": "En savoir plus",
+    "previousImage": "Image précédente",
+    "nextImage": "Image suivante",
+    "goToImage": "Aller à l'image",
+    "slides": [
+      { "alt": "LPG Cargo Ship" },
+      { "alt": "Agricultural Products" },
+      { "alt": "Global Trade" }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Pourquoi choisir",
+    "titleHighlight": "Galaxy Corporation",
+    "subtitle": "Nous combinons des décennies d'expertise agricole avec des pratiques commerciales modernes pour offrir une valeur exceptionnelle à nos partenaires mondiaux.",
+    "features": {
+      "globalReach": {
+        "title": "Portée mondiale",
+        "description": "Servir les clients sur tous les continents avec des services d'exportation fiables et un vaste réseau commercial international."
+      },
+      "qualityAssurance": {
+        "title": "Assurance qualité",
+        "description": "Un contrôle qualité strict à chaque étape garantit des produits de qualité supérieure qui répondent aux normes internationales."
+      },
+      "fastEfficient": {
+        "title": "Rapide et efficace",
+        "description": "Des processus logistiques et documentaires rationalisés garantissent une livraison rapide et un dédouanement fluide."
+      },
+      "competitivePricing": {
+        "title": "Prix compétitifs",
+        "description": "L'approvisionnement direct auprès des agriculteurs et les capacités de traitement en vrac nous permettent d'offrir les meilleurs tarifs du marché."
+      }
+    },
+    "stats": {
+      "globalClients": "Clients mondiaux",
+      "productCategories": "Catégories de produits",
+      "countriesServed": "Pays desservis",
+      "yearsExperience": "Années d'expérience"
+    }
+  },
+  "products": {
+    "title": "Nos",
+    "titleHighlight": "Produits",
+    "subtitle": "Nous exportons des produits agricoles de qualité supérieure dans une large gamme de catégories pour répondre à la demande mondiale.",
+    "allProducts": "Tous les produits",
+    "searchPlaceholder": "Rechercher des produits...",
+    "viewDetails": "Voir les détails",
+    "noProductsFound": "Aucun produit trouvé",
+    "tryAdjusting": "Essayez d'ajuster vos critères de recherche ou de filtre",
+    "clearFilters": "Effacer les filtres",
+    "productsIn": "Produits dans",
+    "back": "Retour",
+    "explore": "Explorer",
+    "products": "Produits",
+    "enquireNow": "Demander maintenant",
+    "productCategories": "Catégories de produits",
+    "countriesServed": "Pays desservis",
+    "yearsExperience": "Années d'expérience",
+    "lookingForSpecific": "Vous cherchez quelque chose de spécifique ? Nous traitons plus de 25 catégories de produits.",
+    "viewAllProducts": "Voir tous les produits",
+    "exploreProducts": "Explorer les produits",
+    "totalProducts": "Total des produits",
+    "catalog": {
+      "pulses-legumes": {
+        "name": "Légumineuses & Pulses",
+        "description": "Légumineuses et pulses de haute qualité provenant de fournisseurs fiables",
+        "items": [
+          "Pois chiches (Kabuli & Desi)",
+          "Lentilles rouges (Masoor Dal)",
+          "Lentilles vertes",
+          "Lentilles noires (Urad Dal)",
+          "Haricots rouges (Rajma)",
+          "Haricots mung (Moong Dal)",
+          "Pois d'Angole (Toor Dal)",
+          "Pois à l'œil noir",
+          "Graines de soja"
+        ],
+        "products": [
+          { "name": "Pois chiches (Kabuli & Desi)", "description": "Teneur élevée en protéines, idéal pour diverses applications culinaires" },
+          { "name": "Lentilles rouges (Masoor Dal)", "description": "Lentilles à cuisson rapide avec une excellente valeur nutritionnelle" },
+          { "name": "Lentilles vertes", "description": "Riches en fibres et minéraux, parfaites pour les soupes et salades" },
+          { "name": "Lentilles noires (Urad Dal)", "description": "Qualité premium avec une teneur élevée en protéines" },
+          { "name": "Haricots rouges (Rajma)", "description": "Haricots larges et nutritifs, idéaux pour les currys et ragoûts" },
+          { "name": "Haricots mung (Moong Dal)", "description": "Facilement digestibles, riches en vitamines et minéraux" },
+          { "name": "Pois d'Angole (Toor Dal)", "description": "Pulse de base avec un excellent goût et une nutrition exceptionnelle" },
+          { "name": "Pois à l'œil noir", "description": "Légumineuse polyvalente au goût distinctif" },
+          { "name": "Graines de soja", "description": "Teneur élevée en protéines, légumineuse polyvalente" }
+        ]
+      },
+      "spices": {
+        "name": "Épices",
+        "description": "Épices authentiques au parfum riche et à la qualité supérieure",
+        "items": [
+          "Curcuma (en poudre et entier)",
+          "Graines de cumin",
+          "Coriandre (graines et en poudre)",
+          "Piment rouge (en poudre et entier)",
+          "Poivre noir",
+          "Cardamome",
+          "Clous de girofle",
+          "Fenouil"
+        ],
+        "products": [
+          { "name": "Curcuma en poudre", "description": "Couleur vive, teneur élevée en curcumine" },
+          { "name": "Curcuma entier (doigts)", "description": "Curcuma entier de qualité premium" },
+          { "name": "Graines de cumin", "description": "Graines aromatiques au goût distinctif" },
+          { "name": "Graines de coriandre", "description": "Graines fraîches et aromatiques pour la mouture" },
+          { "name": "Coriandre en poudre", "description": "Moulue finement, préservant les huiles naturelles" },
+          { "name": "Piment rouge en poudre", "description": "Différents niveaux de piquant disponibles" },
+          { "name": "Piments rouges secs entiers", "description": "Qualité premium, séchés au soleil" },
+          { "name": "Poivre noir", "description": "Saveur audacieuse et piquante" },
+          { "name": "Cardamome verte", "description": "Gousses aromatiques au goût sucré" },
+          { "name": "Clous de girofle", "description": "Qualité premium, cueillis à la main" },
+          { "name": "Graines de fenouil", "description": "Graines sucrées et aromatiques" },
+          { "name": "Graines de fenugrec", "description": "Graines amères et sucrées avec des bienfaits pour la santé" }
+        ]
+      },
+      "cereals": {
+      "name": "Céréales",
+      "description": "Céréales premium incluant le riz basmati, le blé et les millets",
+      "items": [
+        "Riz Basmati",
+        "Riz non Basmati",
+        "Farine de blé",
+        "Millet (Bajra)",
+        "Sorgho (Jowar)",
+        "Maïs (Corn)",
+        "Orge"
+      ],
+      "products": [
+        { "name": "Riz Basmati (1121)", "description": "Grain extra long, riz vieilli avec un arôme supérieur" },
+        { "name": "Riz Basmati (Pusa)", "description": "Variété traditionnelle de basmati" },
+        { "name": "Riz non-Basmati (IR64)", "description": "Grain long, riz non collant" },
+        { "name": "Riz parfumé", "description": "Riz partiellement cuit avec une nutrition améliorée" },
+        { "name": "Farine de blé", "description": "Qualité fine, adaptée à diverses applications" },
+        { "name": "Millet perlé (Bajra)", "description": "Variété de millet nutritif" },
+        { "name": "Sorgho (Jowar)", "description": "Alternative aux céréales sans gluten" },
+        { "name": "Maïs (Corn)", "description": "Variétés jaune et blanche disponibles" },
+        { "name": "Orge", "description": "Orge décortiquée et perlée" }
+      ]
+    },
+    "dry-fruits-nuts": {
+      "name": "Fruits secs et Noix",
+      "description": "Fruits secs et noix de qualité premium pour les marchés mondiaux",
+      "items": [
+        "Amandes",
+        "Noix de cajou",
+        "Noix",
+        "Pistaches",
+        "Raisins (Dorés et Noirs)",
+        "Dattes",
+        "Abricots séchés",
+        "Figs"
+      ],
+      "products": [
+        { "name": "Amandes", "description": "Variétés californiennes et mamra" },
+        { "name": "Noix de cajou (W180, W240, W320)", "description": "Qualité premium, noix de cajou entières" },
+        { "name": "Noix", "description": "Variétés claires et ambrées" },
+        { "name": "Pistaches", "description": "Variétés iraniennes et afghanes" },
+        { "name": "Raisins dorés", "description": "Doux, sans pépins" },
+        { "name": "Raisins noirs", "description": "Naturels, séchés au soleil" },
+        { "name": "Dattes (Medjool, Deglet Noor)", "description": "Qualité premium, dattes moelleuses" },
+        { "name": "Abricots séchés", "description": "Doux, naturellement conservés" },
+        { "name": "Figs", "description": "Figues séchées avec une douceur naturelle" }
+      ]
+    },
+    "aluminum-domes": {
+      "name": "Dômes en aluminium",
+      "description": "Dômes en aluminium de haute qualité pour applications industrielles et commerciales",
+      "items": ["Dômes externes", "Dômes internes", "Tailles personnalisées"],
+      "products": [
+        { "name": "Dômes externes en aluminium", "description": "Dômes externes durables pour réservoirs de stockage et applications industrielles" },
+        { "name": "Dômes internes en aluminium", "description": "Dômes internes conçus avec précision pour équipements spécialisés" },
+        { "name": "Dômes en aluminium personnalisés", "description": "Solutions sur mesure pour exigences industrielles spécifiques" }
+      ]
+    },
+    "petroleum-products": {
+      "name": "Produits pétroliers",
+      "description": "Produits pétroliers premium incluant le GPL pour usage industriel et domestique",
+      "items": ["GPL (Gaz de pétrole liquéfié)"],
+      "products": [
+        { "name": "GPL (Gaz de pétrole liquéfié)", "description": "GPL de haute pureté pour applications domestiques et industrielles" }
+      ]
+    },
+    "fertilizers": {
+      "name": "Engrais",
+      "description": "Gamme complète d'engrais pour l'amélioration agricole",
+      "items": [
+        "Engrais azotés",
+        "Engrais phosphatés",
+        "Engrais potassiques",
+        "Engrais complexes"
+      ],
+      "products": [
+        { "name": "Engrais azotés", "description": "Suppléments d'azote essentiels pour la croissance et le développement des plantes" },
+        { "name": "Engrais phosphatés", "description": "Engrais riches en phosphates pour le développement des racines et la floraison" },
+        { "name": "Engrais potassiques", "description": "Engrais à base de potassium pour améliorer la qualité des cultures et la résistance aux maladies" },
+        { "name": "Engrais complexes", "description": "Formulations multinutriments pour une nutrition équilibrée des plantes" }
+      ]
+    }
+  }
+  },
+  "memberships": {
+    "title": "Adhésions et",
+    "titleHighlight": "Affiliations",
+    "subtitle": "Nous sommes fiers d'être membres des principales organisations agricoles et commerciales, garantissant la conformité et l'excellence dans le commerce international.",
+    "trustBadge": "Certifié et conforme aux normes du commerce international",
+    "organizations": [
+      { "name": "APEDA", "fullName": "Agricultural & Processed Food Products Export Development Authority", "description": "Registered exporter under APEDA" },
+      { "name": "Spices Board", "fullName": "Spices Board of India", "description": "Authorized spice exporter" },
+      { "name": "MCCIA", "fullName": "Mahratta Chamber of Commerce, Industries and Agriculture", "description": "Active member since establishment" },
+      { "name": "MSAMB", "fullName": "Maharashtra State Agricultural Marketing Board", "description": "Certified agricultural trader" },
+      { "name": "ICCIA", "fullName": "Islamic Chamber of Commerce, Industry and Agriculture", "description": "Member organization" }
+    ]
+  },
+  "team": {
+    "title": "Notre",
+    "titleHighlight": "Équipe",
+    "subtitle": "Rencontrez les professionnels dévoués derrière le succès de Galaxy Corporation dans le commerce agricole mondial.",
+    "members": [
+      { "name": "Rajesh Kumar", "position": "Managing Director", "bio": "Leading Galaxy Corporation with 20+ years of experience in agricultural exports and international trade." },
+      { "name": "Priya Sharma", "position": "Export Manager", "bio": "Expert in logistics coordination and ensuring timely delivery to global markets." },
+      { "name": "Amit Patel", "position": "Quality Control Head", "bio": "Ensuring all products meet international quality standards with meticulous testing and certification." },
+      { "name": "Sneha Desai", "position": "Procurement Manager", "bio": "Building strong relationships with farmers and suppliers across India for premium sourcing." },
+      { "name": "Vikram Singh", "position": "Operations Director", "bio": "Streamlining operations and ensuring efficient processing and packaging workflows." },
+      { "name": "Kavita Reddy", "position": "Business Development", "bio": "Expanding our global footprint and establishing new partnerships in international markets." }
+    ]
+  },
+  "contact": {
+    "title": "Contactez",
+    "titleHighlight": "nous",
+    "subtitle": "Vous avez une question ou êtes prêt à commencer un partenariat ? Contactez-nous et nous répondrons dans les 24 heures.",
+    "formTitle": "Envoyez-nous une demande",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "submit": "Envoyer la demande",
+      "submitting": "Envoi en cours...",
+      "namePlaceholder": "Entrez votre nom complet",
+      "emailPlaceholder": "votre@email.com",
+      "messagePlaceholder": "Parlez-nous de vos besoins...",
+      "subjects": {
+        "productInquiry": "Demande de produit",
+        "requestQuote": "Demande de devis",
+        "partnership": "Opportunité de partenariat",
+        "qualityConcern": "Préoccupation qualité",
+        "other": "Autre"
+      }
+    },
+    "successMessage": "Merci pour votre demande ! Nous vous répondrons bientôt.",
+    "contactInfo": {
+      "address": "Adresse",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "businessHours": "Heures d'ouverture",
+      "weekdays": "Lundi - Vendredi : 9h00 - 18h00",
+      "saturday": "Samedi : 9h00 - 13h00",
+      "sunday": "Dimanche : Fermé"
+    },
+    "needAssistance": "Besoin d'aide immédiate ?",
+    "callUs": "Appelez-nous au"
+  },
+  "about": {
+    "title": "À propos de",
+    "titleHighlight": "Galaxy Corporation",
+    "ourStory": "Notre histoire",
+    "founded": "Fondé",
+    "countriesServed": "Pays desservis",
+    "productCategories": "Catégories de produits"
+  },
+  "language": "Langue"
+}

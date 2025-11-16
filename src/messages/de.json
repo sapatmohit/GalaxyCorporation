@@ -1,0 +1,289 @@
+{
+	"metaTitle": "Galaxy Corporation - Globale Agro-Exporteure",
+	"metaDescription": "Führender Exporteur und Händler für Agro-Produkte in Indien",
+	"welcome": "Willkommen auf unserer Website",
+	"nav": {
+		"home": "Startseite",
+		"about": "Über uns",
+		"products": "Produkte",
+		"team": "Team",
+		"contact": "Kontakt",
+		"enquireNow": "Jetzt anfragen"
+	},
+	"hero": {
+		"title": "Willkommen bei",
+		"highlight": "Galaxy Corporation",
+		"description1": "Galaxy Corporation ist einer der führenden Exporteure und Händler für Agro-Produkte in Indien. Das Unternehmen exportiert Agro-Produkte an Kunden auf der ganzen Welt. Wir befinden uns in Pune, einem wichtigen Geschäftszentrum für Agro-Produkte. Das Unternehmen handelt mit einer breiten Palette von Produkten wie Ölsaaten, Getreide, Gewürzen, frischem Gemüse, frischen Früchten, tiefgefrorenem Gemüse, tiefgefrorenen Früchten, Trockenfrüchten, Hülsenfrüchten usw.",
+		"description2": "Die Kernstärke des Unternehmens ist sein starkes Beschaffungsnetzwerk, die Lagerung, Verarbeitung und Lieferung aller landwirtschaftlichen Erzeugnisse, das sich auf alle wichtigen Produktionszentren in ganz Indien erstreckt. Wir haben die notwendige Expertise und das Rückgrat, um jede Nachfrageskala für landwirtschaftliche Erzeugnisse zu erfüllen.",
+		"ctaText": "Mehr erfahren",
+		"previousImage": "Vorheriges Bild",
+		"nextImage": "Nächstes Bild",
+		"goToImage": "Zum Bild gehen",
+		"slides": [
+			{ "alt": "LPG Cargo Ship" },
+			{ "alt": "Agricultural Products" },
+			{ "alt": "Global Trade" }
+		]
+	},
+	"whyChooseUs": {
+		"title": "Warum",
+		"titleHighlight": "Galaxy Corporation wählen",
+		"subtitle": "Wir kombinieren jahrzehntelange landwirtschaftliche Expertise mit modernen Handelspraktiken, um unseren globalen Partnern außergewöhnlichen Wert zu bieten.",
+		"features": {
+			"globalReach": {
+				"title": "Globale Reichweite",
+				"description": "Bedienung von Kunden auf allen Kontinenten mit zuverlässigen Exportdienstleistungen und einem umfangreichen internationalen Handelsnetzwerk."
+			},
+			"qualityAssurance": {
+				"title": "Qualitätssicherung",
+				"description": "Strenge Qualitätskontrolle in jedem Schritt gewährleistet Premium-Produkte, die internationalen Standards entsprechen."
+			},
+			"fastEfficient": {
+				"title": "Schnell und effizient",
+				"description": "Optimierte Logistik- und Dokumentationsprozesse gewährleisten pünktliche Lieferung und reibungslose Zollabfertigung."
+			},
+			"competitivePricing": {
+				"title": "Wettbewerbsfähige Preise",
+				"description": "Direktbeschaffung von Landwirten und Bulk-Verarbeitungskapazitäten ermöglichen es uns, die besten Marktpreise anzubieten."
+			}
+		},
+		"stats": {
+			"globalClients": "Globale Kunden",
+			"productCategories": "Produktkategorien",
+			"countriesServed": "Bediente Länder",
+			"yearsExperience": "Jahre Erfahrung"
+		}
+	},
+	"products": {
+		"title": "Unsere",
+		"titleHighlight": "Produkte",
+		"subtitle": "Wir exportieren hochwertige landwirtschaftliche Erzeugnisse in einer breiten Palette von Kategorien, um die globale Nachfrage zu decken.",
+		"allProducts": "Alle Produkte",
+		"searchPlaceholder": "Produkte suchen...",
+		"viewDetails": "Details anzeigen",
+		"noProductsFound": "Keine Produkte gefunden",
+		"tryAdjusting": "Versuchen Sie, Ihre Such- oder Filterkriterien anzupassen",
+		"clearFilters": "Filter löschen",
+		"productsIn": "Produkte in",
+		"back": "Zurück",
+		"explore": "Erkunden",
+		"products": "Produkte",
+		"enquireNow": "Jetzt anfragen",
+		"productCategories": "Produktkategorien",
+		"countriesServed": "Bediente Länder",
+		"yearsExperience": "Jahre Erfahrung",
+		"lookingForSpecific": "Suchen Sie etwas Bestimmtes? Wir handeln mit über 25 Produktkategorien.",
+		"viewAllProducts": "Alle Produkte anzeigen",
+		"exploreProducts": "Produkte erkunden",
+		"totalProducts": "Gesamtprodukte",
+		"catalog": {
+			"pulses-legumes": {
+				"name": "Hülsenfrüchte & Leguminosen",
+				"description": "Hochwertige Hülsenfrüchte und Leguminosen von vertrauenswürdigen Lieferanten",
+				"items": [
+					"Kichererbsen (Kabuli & Desi)",
+					"Rote Linsen (Masoor Dal)",
+					"Grüne Linsen",
+					"Schwarze Linsen (Urad Dal)",
+					"Kidneybohnen (Rajma)",
+					"Mungobohnen (Moong Dal)",
+					"TaubenErbsen (Toor Dal)",
+					"Augenbohnen",
+					"Sojabohnen"
+				],
+				"products": [
+					{ "name": "Kichererbsen (Kabuli & Desi)", "description": "Hoher Proteingehalt, ideal für verschiedene kulinarische Anwendungen" },
+					{ "name": "Rote Linsen (Masoor Dal)", "description": "Schnellkochende Linsen mit hervorragendem Nährwert" },
+					{ "name": "Grüne Linsen", "description": "Reich an Ballaststoffen und Mineralien, perfekt für Suppen und Salate" },
+					{ "name": "Schwarze Linsen (Urad Dal)", "description": "Premium-Qualität mit hohem Proteingehalt" },
+					{ "name": "Kidneybohnen (Rajma)", "description": "Große, nahrhafte Bohnen, ideal für Currys und Eintöpfe" },
+					{ "name": "Mungobohnen (Moong Dal)", "description": "Leicht verdaulich, reich an Vitaminen und Mineralien" },
+					{ "name": "TaubenErbsen (Toor Dal)", "description": "Grundnahrungsmittel mit hervorragendem Geschmack und Nährwert" },
+					{ "name": "Augenbohnen", "description": "Vielseitige Leguminose mit charakteristischem Geschmack" },
+					{ "name": "Sojabohnen", "description": "Hoher Proteingehalt, vielseitige Leguminose" }
+				]
+			},
+			"spices": {
+				"name": "Gewürze",
+				"description": "Authentische Gewürze mit reichem Aroma und hoher Qualität",
+				"items": [
+					"Kurkuma (Pulver & Ganz)",
+					"Kreuzkümmelsamen",
+					"Koriander (Samen & Pulver)",
+					"Roter Chili (Pulver & Ganz)",
+					"Schwarzer Pfeffer",
+					"Kardamom",
+					"Nelken",
+					"Bockshornklee"
+				],
+				"products": [
+					{ "name": "Kurkuma-Pulver", "description": "Leuchtende Farbe, hoher Kurkumingehalt" },
+					{ "name": "Kurkuma Ganz (Finger)", "description": "Premium-Qualität, ganzes Kurkuma" },
+					{ "name": "Kreuzkümmelsamen", "description": "Aromatische Samen mit charakteristischem Geschmack" },
+					{ "name": "Koriandersamen", "description": "Frische, aromatische Samen zum Mahlen" },
+					{ "name": "Korianderpulver", "description": "Fein gemahlen, bewahrt die natürlichen Öle" },
+					{ "name": "Rotes Chilipulver", "description": "Verschiedene Schärfegrade erhältlich" },
+					{ "name": "Ganze getrocknete rote Chilis", "description": "Premium-Qualität, sonnengetrocknet" },
+					{ "name": "Schwarzer Pfeffer", "description": "Kräftiger, scharfer Geschmack" },
+					{ "name": "Grüner Kardamom", "description": "Aromatische Schoten mit süßlichem Geschmack" },
+					{ "name": "Nelken", "description": "Premium-Qualität, von Hand gepflückt" },
+					{ "name": "Bockshornkleesamen", "description": "Bitter-süße Samen mit gesundheitlichen Vorteilen" },
+					{ "name": "Fenchelsamen", "description": "Süße, aromatische Samen" }
+				]
+			},
+			"cereals": {
+				"name": "Getreide",
+				"description": "Hochwertige Getreidesorten einschließlich Basmati-Reis, Weizen und Hirse",
+				"items": [
+					"Basmati-Reis",
+					"Nicht-Basmati-Reis",
+					"Weizenmehl",
+					"Hirse (Bajra)",
+					"Sorghum (Jowar)",
+					"Mais (Corn)",
+					"Gerste"
+				],
+				"products": [
+					{ "name": "Basmati-Reis (1121)", "description": "Extralange Körner, gelagerter Reis mit hervorragendem Aroma" },
+					{ "name": "Basmati-Reis (Pusa)", "description": "Traditionelle Basmati-Sorte" },
+					{ "name": "Nicht-Basmati-Reis (IR64)", "description": "Lange Körner, nicht klebrig" },
+					{ "name": "Parboilierter Reis", "description": "Teilgekochter Reis mit verbesserter Ernährung" },
+					{ "name": "Weizenmehl", "description": "Feine Qualität, geeignet für verschiedene Anwendungen" },
+					{ "name": "Perlhirse (Bajra)", "description": "Nahrhafte Hirsensorte" },
+					{ "name": "Sorghum (Jowar)", "description": "Glutenfreie Getreidealternative" },
+					{ "name": "Mais (Corn)", "description": "Gelbe und weiße Sorten erhältlich" },
+					{ "name": "Gerste", "description": "Geschälte und Perlegerste" }
+				]
+			},
+			"dry-fruits-nuts": {
+				"name": "Trockenfrüchte & Nüsse",
+				"description": "Hochwertige Trockenfrüchte und Nüsse für den Weltmarkt",
+				"items": [
+					"Mandeln",
+					"Cashewnüsse",
+					"Walnüsse",
+					"Pistazien",
+					"Rosinen (Golden & Black)",
+					"Datteln",
+					"Getrocknete Aprikosen",
+					"Feigen"
+				],
+				"products": [
+					{ "name": "Mandeln", "description": "Kalifornien und Mamra-Sorten" },
+					{ "name": "Cashewnüsse (W180, W240, W320)", "description": "Premium-Qualität, ganze Cashewnüsse" },
+					{ "name": "Walnüsse", "description": "Helle und bernsteinfarbene Sorten" },
+					{ "name": "Pistazien", "description": "Iranische und afghanische Sorten" },
+					{ "name": "Goldene Rosinen", "description": "Süß, kernlose Rosinen" },
+					{ "name": "Schwarze Rosinen", "description": "Natürlich, sonnengetrocknet" },
+					{ "name": "Datteln (Medjool, Deglet Noor)", "description": "Premium-Qualität, weiche Datteln" },
+					{ "name": "Getrocknete Aprikosen", "description": "Süß, natürlich konserviert" },
+					{ "name": "Feigen", "description": "Getrocknete Feigen mit natürlicher Süße" }
+				]
+			},
+			"aluminum-domes": {
+				"name": "Aluminiumkuppeln",
+				"description": "Hochwertige Aluminiumkuppeln für industrielle und kommerzielle Anwendungen",
+				"items": ["Externe Kuppeln", "Interne Kuppeln", "Sondergrößen"],
+				"products": [
+					{ "name": "Externe Aluminiumkuppeln", "description": "Langlebige externe Kuppeln für Lagertanks und industrielle Anwendungen" },
+					{ "name": "Interne Aluminiumkuppeln", "description": "Präzisionsgefertigte interne Kuppeln für spezialisierte Ausrüstung" },
+					{ "name": "Kundenspezifische Aluminiumkuppeln", "description": "Maßgeschneiderte Lösungen für spezifische industrielle Anforderungen" }
+				]
+			},
+			"petroleum-products": {
+				"name": "Erdölerzeugnisse",
+				"description": "Hochwertige Erdölerzeugnisse einschließlich LPG für industrielle und private Nutzung",
+				"items": ["LPG (Flüssiggas)"],
+				"products": [
+					{ "name": "LPG (Flüssiggas)", "description": "Hochreines LPG für private und industrielle Anwendungen" }
+				]
+			},
+			"fertilizers": {
+				"name": "Düngemittel",
+				"description": "Umfassende Palette von Düngemitteln zur Verbesserung der Landwirtschaft",
+				"items": [
+					"Stickstoffhaltige Düngemittel",
+					"Phosphathaltige Düngemittel",
+					"Kaliumhaltige Düngemittel",
+					"Komplexdünger"
+				],
+				"products": [
+					{ "name": "Stickstoffhaltige Düngemittel", "description": "Wesentliche Stickstoffzusätze für das Pflanzenwachstum und die Entwicklung" },
+					{ "name": "Phosphathaltige Düngemittel", "description": "Phosphat-reiche Düngemittel für die Wurzelentwicklung und Blüte" },
+					{ "name": "Kaliumhaltige Düngemittel", "description": "Kalium-basierte Düngemittel für verbesserte Erntequalität und Krankheitsresistenz" },
+					{ "name": "Komplexdünger", "description": "Mehrnährstoff-Formulierungen für eine ausgewogene Pflanzenernährung" }
+				]
+			}
+		}
+	},
+	"memberships": {
+		"title": "Mitgliedschaften und",
+		"titleHighlight": "Zugehörigkeiten",
+		"subtitle": "Wir sind stolze Mitglieder führender landwirtschaftlicher und Handelsorganisationen und gewährleisten Compliance und Exzellenz im internationalen Handel.",
+		"trustBadge": "Zertifiziert und konform mit internationalen Handelsstandards",
+		"organizations": [
+			{ "name": "APEDA", "fullName": "Agricultural & Processed Food Products Export Development Authority", "description": "Registered exporter under APEDA" },
+			{ "name": "Spices Board", "fullName": "Spices Board of India", "description": "Authorized spice exporter" },
+			{ "name": "MCCIA", "fullName": "Mahratta Chamber of Commerce, Industries and Agriculture", "description": "Active member since establishment" },
+			{ "name": "MSAMB", "fullName": "Maharashtra State Agricultural Marketing Board", "description": "Certified agricultural trader" },
+			{ "name": "ICCIA", "fullName": "Islamic Chamber of Commerce, Industry and Agriculture", "description": "Member organization" }
+		]
+	},
+	"team": {
+		"title": "Unser",
+		"titleHighlight": "Team",
+		"subtitle": "Lernen Sie die engagierten Fachkräfte hinter dem Erfolg von Galaxy Corporation im globalen Agrarhandel kennen.",
+		"members": [
+			{ "name": "Rajesh Kumar", "position": "Managing Director", "bio": "Leading Galaxy Corporation with 20+ years of experience in agricultural exports and international trade." },
+			{ "name": "Priya Sharma", "position": "Export Manager", "bio": "Expert in logistics coordination and ensuring timely delivery to global markets." },
+			{ "name": "Amit Patel", "position": "Quality Control Head", "bio": "Ensuring all products meet international quality standards with meticulous testing and certification." },
+			{ "name": "Sneha Desai", "position": "Procurement Manager", "bio": "Building strong relationships with farmers and suppliers across India for premium sourcing." },
+			{ "name": "Vikram Singh", "position": "Operations Director", "bio": "Streamlining operations and ensuring efficient processing and packaging workflows." },
+			{ "name": "Kavita Reddy", "position": "Business Development", "bio": "Expanding our global footprint and establishing new partnerships in international markets." }
+		]
+	},
+	"contact": {
+		"title": "Kontaktieren Sie",
+		"titleHighlight": "uns",
+		"subtitle": "Haben Sie eine Frage oder sind Sie bereit, eine Partnerschaft zu beginnen? Kontaktieren Sie uns und wir werden innerhalb von 24 Stunden antworten.",
+		"formTitle": "Senden Sie uns eine Anfrage",
+		"form": {
+			"name": "Vollständiger Name",
+			"email": "E-Mail-Adresse",
+			"phone": "Telefonnummer",
+			"subject": "Betreff",
+			"message": "Ihre Nachricht",
+			"submit": "Anfrage senden",
+			"submitting": "Wird gesendet...",
+			"namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+			"emailPlaceholder": "ihre@email.com",
+			"messagePlaceholder": "Erzählen Sie uns von Ihren Anforderungen...",
+			"subjects": {
+				"productInquiry": "Produktanfrage",
+				"requestQuote": "Angebotsanfrage",
+				"partnership": "Partnerschaftsmöglichkeit",
+				"qualityConcern": "Qualitätsbedenken",
+				"other": "Andere"
+			}
+		},
+		"successMessage": "Vielen Dank für Ihre Anfrage! Wir werden uns bald bei Ihnen melden.",
+		"contactInfo": {
+			"address": "Adresse",
+			"email": "E-Mail",
+			"phone": "Telefon",
+			"businessHours": "Geschäftszeiten",
+			"weekdays": "Montag - Freitag: 9:00 - 18:00 Uhr",
+			"saturday": "Samstag: 9:00 - 13:00 Uhr",
+			"sunday": "Sonntag: Geschlossen"
+		}
+	},
+	"about": {
+		"title": "Über",
+		"titleHighlight": "Galaxy Corporation",
+		"ourStory": "Unsere Geschichte",
+		"founded": "Gegründet",
+		"countriesServed": "Bediente Länder",
+		"productCategories": "Produktkategorien"
+	},
+	"language": "Sprache"
+}

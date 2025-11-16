@@ -1,20 +1,9 @@
-import Image from "next/image";
-import ContactSection from "./components/ContactSection";
-import MembershipsSection from "./components/MembershipsSection";
-import Hero from "./components/Hero";
-import ProductsSection from "./components/ProductsSection";
-import TeamSection from "./components/TeamSection";
-import WhyChooseUs from "./components/WhyChooseUs";
+import { redirect } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <WhyChooseUs />
-      <ProductsSection />
-      <MembershipsSection />
-      <TeamSection />
-      <ContactSection />
-    </>
-  );
+// This page will be caught by middleware and redirected,
+// but having it here ensures proper handling
+export default function RootPage() {
+  redirect(`/${routing.defaultLocale}`);
 }
+

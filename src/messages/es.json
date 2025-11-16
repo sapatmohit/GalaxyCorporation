@@ -1,0 +1,291 @@
+{
+  "metaTitle": "Galaxy Corporation - Exportadores Agro Globales",
+  "metaDescription": "Exportador y Comerciante Líder de Productos Agro en India",
+  "welcome": "Bienvenido a nuestro sitio web",
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "products": "Productos",
+    "team": "Equipo",
+    "contact": "Contacto",
+    "enquireNow": "Consultar ahora"
+  },
+  "hero": {
+    "title": "Bienvenido a",
+    "highlight": "Galaxy Corporation",
+    "description1": "Galaxy Corporation es uno de los principales exportadores y comerciantes de productos agro en India. La empresa exporta productos agro a clientes de todo el mundo. Estamos ubicados en Pune, que es un importante centro comercial para productos agro. La empresa se dedica a una amplia gama de productos como semillas oleaginosas, cereales, especias, verduras frescas, frutas frescas, verduras congeladas, frutas congeladas, frutos secos, legumbres, etc.",
+    "description2": "La fortaleza principal de la empresa es su sólida red de adquisiciones, almacenamiento, procesamiento y suministro de todos los productos agrícolas que se extiende a todos los centros de producción importantes en toda la India. Tenemos la experiencia y los recursos necesarios para satisfacer cualquier escala de demanda de productos agrícolas.",
+    "ctaText": "Saber más",
+    "previousImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente",
+    "goToImage": "Ir a la imagen",
+    "slides": [
+      { "alt": "LPG Cargo Ship" },
+      { "alt": "Agricultural Products" },
+      { "alt": "Global Trade" }
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Por qué elegir",
+    "titleHighlight": "Galaxy Corporation",
+    "subtitle": "Combinamos décadas de experiencia agrícola con prácticas comerciales modernas para ofrecer un valor excepcional a nuestros socios globales.",
+    "features": {
+      "globalReach": {
+        "title": "Alcance global",
+        "description": "Atendiendo clientes en todos los continentes con servicios de exportación confiables y una extensa red comercial internacional."
+      },
+      "qualityAssurance": {
+        "title": "Garantía de calidad",
+        "description": "Un estricto control de calidad en cada paso garantiza productos de grado premium que cumplen con los estándares internacionales."
+      },
+      "fastEfficient": {
+        "title": "Rápido y eficiente",
+        "description": "Procesos logísticos y documentales optimizados garantizan una entrega oportuna y un despacho aduanero fluido."
+      },
+      "competitivePricing": {
+        "title": "Precios competitivos",
+        "description": "El abastecimiento directo de agricultores y las capacidades de procesamiento a granel nos permiten ofrecer las mejores tarifas del mercado."
+      }
+    },
+    "stats": {
+      "globalClients": "Clientes globales",
+      "productCategories": "Categorías de productos",
+      "countriesServed": "Países atendidos",
+      "yearsExperience": "Años de experiencia"
+    }
+  },
+  "products": {
+    "title": "Nuestros",
+    "titleHighlight": "Productos",
+    "subtitle": "Exportamos productos agrícolas de calidad premium en una amplia gama de categorías para satisfacer la demanda global.",
+    "allProducts": "Todos los productos",
+    "searchPlaceholder": "Buscar productos...",
+    "viewDetails": "Ver detalles",
+    "noProductsFound": "No se encontraron productos",
+    "tryAdjusting": "Intente ajustar sus criterios de búsqueda o filtro",
+    "clearFilters": "Limpiar filtros",
+    "productsIn": "Productos en",
+    "back": "Atrás",
+    "explore": "Explorar",
+    "products": "Productos",
+    "enquireNow": "Consultar ahora",
+    "productCategories": "Categorías de productos",
+    "countriesServed": "Países atendidos",
+    "yearsExperience": "Años de experiencia",
+    "lookingForSpecific": "¿Busca algo específico? Trabajamos con más de 25 categorías de productos.",
+    "viewAllProducts": "Ver todos los productos",
+    "exploreProducts": "Explorar productos",
+    "totalProducts": "Total de productos",
+    "catalog": {
+      "pulses-legumes": {
+        "name": "Legumbres y Pulses",
+        "description": "Legumbres y pulses de alta calidad provenientes de proveedores confiables",
+        "items": [
+          "Garbanzos (Kabuli y Desi)",
+          "Lentejas rojas (Masoor Dal)",
+          "Lentejas verdes",
+          "Lentejas negras (Urad Dal)",
+          "Frijoles rojos (Rajma)",
+          "Frijoles mung (Moong Dal)",
+          "Guisantes de paloma (Toor Dal)",
+          "Frijoles negros con ojo",
+          "Soja"
+        ],
+        "products": [
+          { "name": "Garbanzos (Kabuli y Desi)", "description": "Alto contenido de proteína, ideal para diversas aplicaciones culinarias" },
+          { "name": "Lentejas rojas (Masoor Dal)", "description": "Lentejas de cocción rápida con excelente valor nutricional" },
+          { "name": "Lentejas verdes", "description": "Ricas en fibra y minerales, perfectas para sopas y ensaladas" },
+          { "name": "Lentejas negras (Urad Dal)", "description": "Calidad premium con alto contenido de proteína" },
+          { "name": "Frijoles rojos (Rajma)", "description": "Frijoles grandes y nutritivos, ideales para currys y guisos" },
+          { "name": "Frijoles mung (Moong Dal)", "description": "Fácilmente digeribles, ricos en vitaminas y minerales" },
+          { "name": "Guisantes de paloma (Toor Dal)", "description": "Pulse básico con excelente sabor y nutrición" },
+          { "name": "Frijoles negros con ojo", "description": "Legumbre versátil con sabor distintivo" },
+          { "name": "Soja", "description": "Alto contenido de proteína, legumbre multipropósito" }
+        ]
+      },
+      "spices": {
+        "name": "Especias",
+        "description": "Especias auténticas con aroma rico y calidad superior",
+        "items": [
+          "Cúrcuma (en polvo y entera)",
+          "Semillas de comino",
+          "Cilantro (semillas y en polvo)",
+          "Chile rojo (en polvo y entero)",
+          "Pimienta negra",
+          "Cardamomo",
+          "Clavos de olor",
+          "Fenogreco"
+        ],
+        "products": [
+          { "name": "Cúrcuma en polvo", "description": "Color brillante, alto contenido de curcumina" },
+          { "name": "Cúrcuma entera (dedos)", "description": "Cúrcuma entera de grado premium" },
+          { "name": "Semillas de comino", "description": "Semillas aromáticas con sabor distintivo" },
+          { "name": "Semillas de cilantro", "description": "Semillas frescas y aromáticas para moler" },
+          { "name": "Cilantro en polvo", "description": "Molido finamente, preservando los aceites naturales" },
+          { "name": "Chile rojo en polvo", "description": "Disponibles varios niveles de picante" },
+          { "name": "Chiles rojos secos enteros", "description": "Grado premium, secados al sol" },
+          { "name": "Pimienta negra", "description": "Sabor intenso y picante" },
+          { "name": "Cardamomo verde", "description": "Vainas aromáticas con sabor dulce" },
+          { "name": "Clavos de olor", "description": "Calidad premium, recogidos a mano" },
+          { "name": "Semillas de fenogreco", "description": "Semillas dulces y amargas con beneficios para la salud" },
+          { "name": "Semillas de hinojo", "description": "Semillas dulces y aromáticas" }
+        ]
+      },
+      "cereals": {
+        "name": "Cereales",
+        "description": "Granos premium incluyendo arroz basmati, trigo y mijo",
+        "items": [
+          "Arroz Basmati",
+          "Arroz no Basmati",
+          "Harina de trigo",
+          "Mijo (Bajra)",
+          "Sorgo (Jowar)",
+          "Maíz (Corn)",
+          "Cebada"
+        ],
+        "products": [
+          { "name": "Arroz Basmati (1121)", "description": "Grano extra largo, arroz envejecido con aroma superior" },
+          { "name": "Arroz Basmati (Pusa)", "description": "Variedad tradicional de basmati" },
+          { "name": "Arroz no Basmati (IR64)", "description": "Grano largo, arroz no pegajoso" },
+          { "name": "Arroz parboilizado", "description": "Arroz parcialmente cocido con nutrición mejorada" },
+          { "name": "Harina de trigo", "description": "Calidad fina, adecuada para varias aplicaciones" },
+          { "name": "Mijo perla (Bajra)", "description": "Variedad de mijo nutritiva" },
+          { "name": "Sorgo (Jowar)", "description": "Alternativa de grano sin gluten" },
+          { "name": "Maíz (Corn)", "description": "Variedades amarilla y blanca disponibles" },
+          { "name": "Cebada", "description": "Cebada descascarillada y perlada" }
+        ]
+      },
+      "dry-fruits-nuts": {
+        "name": "Frutas secas y Nueces",
+        "description": "Frutas secas y nueces de calidad premium para mercados globales",
+        "items": [
+          "Almendras",
+          "Cacahuetes/Cashews",
+          "Nueces",
+          "Pistachos",
+          "Pasas (Doradas y Negras)",
+          "Dátiles",
+          "Albaricoques secos",
+          "Higos"
+        ],
+        "products": [
+          { "name": "Almendras", "description": "Variedades de California y mamra" },
+          { "name": "Cacahuetes/Cashews (W180, W240, W320)", "description": "Grado premium, cacahuetes enteros" },
+          { "name": "Nueces", "description": "Variedades claras y ámbar" },
+          { "name": "Pistachos", "description": "Variedades iraníes y afganas" },
+          { "name": "Pasas doradas", "description": "Dulces, sin pepa" },
+          { "name": "Pasas negras", "description": "Naturales, secas al sol" },
+          { "name": "Dátiles (Medjool, Deglet Noor)", "description": "Calidad premium, dátiles suaves" },
+          { "name": "Albaricoques secos", "description": "Dulces, preservados naturalmente" },
+          { "name": "Higos", "description": "Higos secos con dulzura natural" }
+        ]
+      },
+      "aluminum-domes": {
+        "name": "Cúpulas de aluminio",
+        "description": "Cúpulas de aluminio de alta calidad para aplicaciones industriales y comerciales",
+        "items": ["Cúpulas externas", "Cúpulas internas", "Tamaños personalizados"],
+        "products": [
+          { "name": "Cúpulas externas de aluminio", "description": "Cúpulas externas duraderas para tanques de almacenamiento y aplicaciones industriales" },
+          { "name": "Cúpulas internas de aluminio", "description": "Cúpulas internas de ingeniería de precisión para equipos especializados" },
+          { "name": "Cúpulas de aluminio personalizadas", "description": "Soluciones a medida para requisitos industriales específicos" }
+        ]
+      },
+      "petroleum-products": {
+        "name": "Productos petrolíferos",
+        "description": "Productos petrolíferos premium incluyendo GLP para uso industrial y doméstico",
+        "items": ["GLP (Gas licuado del petróleo)"],
+        "products": [
+          { "name": "GLP (Gas licuado del petróleo)", "description": "GLP de alta pureza para aplicaciones domésticas e industriales" }
+        ]
+      },
+      "fertilizers": {
+        "name": "Fertilizantes",
+        "description": "Gama completa de fertilizantes para el mejoramiento agrícola",
+        "items": [
+          "Fertilizantes nitrogenados",
+          "Fertilizantes fosfáticos",
+          "Fertilizantes potásicos",
+          "Fertilizantes complejos"
+        ],
+        "products": [
+          { "name": "Fertilizantes nitrogenados", "description": "Suplementos esenciales de nitrógeno para el crecimiento y desarrollo de las plantas" },
+          { "name": "Fertilizantes fosfáticos", "description": "Fertilizantes ricos en fósforo para el desarrollo de raíces y floración" },
+          { "name": "Fertilizantes potásicos", "description": "Fertilizantes a base de potasio para mejorar la calidad de los cultivos y la resistencia a enfermedades" },
+          { "name": "Fertilizantes complejos", "description": "Formulaciones multinutrientes para una nutrición equilibrada de las plantas" }
+        ]
+      }
+    }
+  },
+  "memberships": {
+    "title": "Membresías y",
+    "titleHighlight": "Afiliaciones",
+    "subtitle": "Somos miembros orgullosos de las principales organizaciones agrícolas y comerciales, asegurando el cumplimiento y la excelencia en el comercio internacional.",
+    "trustBadge": "Certificado y conforme con los estándares del comercio internacional",
+    "organizations": [
+      { "name": "APEDA", "fullName": "Agricultural & Processed Food Products Export Development Authority", "description": "Registered exporter under APEDA" },
+      { "name": "Spices Board", "fullName": "Spices Board of India", "description": "Authorized spice exporter" },
+      { "name": "MCCIA", "fullName": "Mahratta Chamber of Commerce, Industries and Agriculture", "description": "Active member since establishment" },
+      { "name": "MSAMB", "fullName": "Maharashtra State Agricultural Marketing Board", "description": "Certified agricultural trader" },
+      { "name": "ICCIA", "fullName": "Islamic Chamber of Commerce, Industry and Agriculture", "description": "Member organization" }
+    ]
+  },
+  "team": {
+    "title": "Nuestro",
+    "titleHighlight": "Equipo",
+    "subtitle": "Conozca a los profesionales dedicados detrás del éxito de Galaxy Corporation en el comercio agrícola global.",
+    "members": [
+      { "name": "Rajesh Kumar", "position": "Managing Director", "bio": "Leading Galaxy Corporation with 20+ years of experience in agricultural exports and international trade." },
+      { "name": "Priya Sharma", "position": "Export Manager", "bio": "Expert in logistics coordination and ensuring timely delivery to global markets." },
+      { "name": "Amit Patel", "position": "Quality Control Head", "bio": "Ensuring all products meet international quality standards with meticulous testing and certification." },
+      { "name": "Sneha Desai", "position": "Procurement Manager", "bio": "Building strong relationships with farmers and suppliers across India for premium sourcing." },
+      { "name": "Vikram Singh", "position": "Operations Director", "bio": "Streamlining operations and ensuring efficient processing and packaging workflows." },
+      { "name": "Kavita Reddy", "position": "Business Development", "bio": "Expanding our global footprint and establishing new partnerships in international markets." }
+    ]
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "titleHighlight": "",
+    "subtitle": "¿Tiene una pregunta o está listo para comenzar una asociación? Póngase en contacto con nosotros y responderemos en 24 horas.",
+    "formTitle": "Envíenos una consulta",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Dirección de correo electrónico",
+      "phone": "Número de teléfono",
+      "subject": "Asunto",
+      "message": "Su mensaje",
+      "submit": "Enviar consulta",
+      "submitting": "Enviando...",
+      "namePlaceholder": "Ingrese su nombre completo",
+      "emailPlaceholder": "su@email.com",
+      "messagePlaceholder": "Cuéntenos sobre sus requisitos...",
+      "subjects": {
+        "productInquiry": "Consulta de producto",
+        "requestQuote": "Solicitud de cotización",
+        "partnership": "Oportunidad de asociación",
+        "qualityConcern": "Preocupación de calidad",
+        "other": "Otro"
+      }
+    },
+    "successMessage": "¡Gracias por su consulta! Nos pondremos en contacto con usted pronto.",
+    "contactInfo": {
+      "address": "Dirección",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "businessHours": "Horario comercial",
+      "weekdays": "Lunes - Viernes: 9:00 AM - 6:00 PM",
+      "saturday": "Sábado: 9:00 AM - 1:00 PM",
+      "sunday": "Domingo: Cerrado"
+    },
+    "needAssistance": "¿Necesita asistencia inmediata?",
+    "callUs": "Llámenos al"
+  },
+  "about": {
+    "title": "Acerca de",
+    "titleHighlight": "Galaxy Corporation",
+    "ourStory": "Nuestra historia",
+    "founded": "Fundado",
+    "countriesServed": "Países atendidos",
+    "productCategories": "Categorías de productos"
+  },
+  "language": "Idioma"
+}

@@ -1,12 +1,14 @@
 "use client";
 
-import heroData from "@/data/hero.json";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import heroData from "@/data/hero.json";
 
 const IMAGES = heroData.slides.map(slide => slide.image);
 
 export default function Hero() {
+  const t = useTranslations('common.hero');
   const [current, setCurrent] = useState(0);
 
   const next = () => setCurrent((prev) => (prev + 1) % IMAGES.length);
@@ -31,7 +33,7 @@ export default function Hero() {
               <button
                 onClick={prev}
                 className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:bg-white transition-colors z-10"
-                aria-label="Previous image"
+                aria-label={t('previousImage')}
               >
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#0a2540]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -40,7 +42,7 @@ export default function Hero() {
               <button
                 onClick={next}
                 className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/90 shadow-lg flex items-center justify-center hover:bg-white transition-colors z-10"
-                aria-label="Next image"
+                aria-label={t('nextImage')}
               >
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#0a2540]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -56,7 +58,7 @@ export default function Hero() {
                     className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all ${
                       index === current ? "bg-[#0ea5ff] w-6 sm:w-8" : "bg-white/60"
                     }`}
-                    aria-label={`Go to image ${index + 1}`}
+                    aria-label={`${t('goToImage')} ${index + 1}`}
                   />
                 ))}
               </div>
@@ -75,7 +77,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                {heroData.content.title} <span className="text-[#0ea5ff] font-semibold">{heroData.content.highlight}</span>
+                {t('title')} <span className="text-[#0ea5ff] font-semibold">{t('highlight')}</span>
               </motion.h2>
               <motion.p 
                 className="text-sm sm:text-[15px] leading-relaxed text-[#334155]"
@@ -83,7 +85,7 @@ export default function Hero() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                {heroData.content.description1}
+                {t('description1')}
               </motion.p>
               <motion.p 
                 className="text-sm sm:text-[15px] leading-relaxed text-[#334155]"
@@ -91,7 +93,7 @@ export default function Hero() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
               >
-                {heroData.content.description2}
+                {t('description2')}
               </motion.p>
               <motion.div 
                 className="pt-2 sm:pt-3"
@@ -105,7 +107,7 @@ export default function Hero() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  {heroData.content.ctaText}
+                  {t('ctaText')}
                 </motion.a>
               </motion.div>
             </motion.div>

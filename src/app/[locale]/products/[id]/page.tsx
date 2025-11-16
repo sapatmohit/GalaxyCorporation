@@ -1,9 +1,16 @@
+import { getTranslations } from 'next-intl/server';
+import { Link } from '@/i18n/routing';
 import productsData from "@/data/products.json";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export default function ProductCategoryPage({ params }: { params: { id: string } }) {
-  const category = productsData.categories.find((cat) => cat.id === params.id);
+export default async function ProductCategoryPage({ 
+  params 
+}: { 
+  params: Promise<{ id: string; locale: string }> 
+}) {
+  const { id, locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'common.products' });
+  const category = productsData.categories.find((cat) => cat.id === id);
 
   if (!category) {
     notFound();
@@ -12,14 +19,13 @@ export default function ProductCategoryPage({ params }: { params: { id: string }
   return (
     <div className="min-h-screen bg-white py-14 md:py-20">
       <div className="mx-auto max-w-[80%] px-6">
-        {/* Breadcrumb */}
         <div className="mb-6 md:mb-8">
           <div className="flex items-center gap-2 text-sm text-[#64748b]">
             <Link href="/products" className="inline-flex items-center gap-2 text-[#0ea5ff] hover:text-[#0596ea]">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
-              Back
+              {t('back')}
             </Link>
             <span>/</span>
             <span>Products</span>
@@ -28,11 +34,9 @@ export default function ProductCategoryPage({ params }: { params: { id: string }
           </div>
         </div>
 
-        {/* Hero */}
         <div className="relative overflow-hidden rounded-3xl border border-white shadow-lg bg-gradient-to-br from-[#f0f9ff] via-white to-[#f0f9ff]">
           <div className="absolute inset-0 opacity-20 pointer-events-none" style={{backgroundImage:"radial-gradient(#93c5fd 1px, transparent 1px)",backgroundSize:"16px 16px"}} />
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 p-6 md:p-10">
-            {/* Image */}
             <div className="order-2 md:order-1">
               <div className="relative h-64 md:h-[340px] rounded-2xl overflow-hidden shadow-xl">
                 <img src={category.image} alt={category.name} className="w-full h-full object-cover" />
@@ -40,7 +44,6 @@ export default function ProductCategoryPage({ params }: { params: { id: string }
               </div>
             </div>
 
-            {/* Content */}
             <div className="order-1 md:order-2 flex flex-col justify-center">
               <h1 className="text-3xl md:text-5xl font-bold font-heading text-[#0a2540] tracking-tight">
                 {category.name}
@@ -49,7 +52,6 @@ export default function ProductCategoryPage({ params }: { params: { id: string }
                 {category.description}
               </p>
 
-              {/* Chips scroller */}
               <div className="mt-5 -mx-2 overflow-x-auto scrollbar-hide">
                 <div className="px-2 inline-flex gap-2">
                   {category.items.map((item, index) => (
@@ -66,17 +68,16 @@ export default function ProductCategoryPage({ params }: { params: { id: string }
           </div>
         </div>
 
-        {/* Products Grid */}
         <section className="mt-12 md:mt-16">
           <div className="flex items-end justify-between mb-6 md:mb-8">
             <h2 className="text-2xl md:text-3xl font-bold font-heading text-[#0a2540]">
-              Products in {category.name}
+              {t('productsIn')} {category.name}
             </h2>
             <Link
               href="/contact"
               className="hidden md:inline-flex items-center gap-2 h-11 px-5 rounded-xl bg-[#0ea5ff] text-white text-sm font-semibold shadow-md hover:shadow-lg transition-all"
             >
-              Enquire Now
+              {t('enquireNow')}
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -98,7 +99,7 @@ export default function ProductCategoryPage({ params }: { params: { id: string }
                     {product.description}
                   </p>
                   <div className="mt-4 inline-flex items-center gap-2 text-[#0ea5ff] text-sm font-medium">
-                    Explore
+                    {t('explore')}
                     <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -108,13 +109,12 @@ export default function ProductCategoryPage({ params }: { params: { id: string }
             ))}
           </div>
 
-          {/* Mobile CTA */}
           <div className="md:hidden mt-8">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center w-full h-12 rounded-xl bg-gradient-to-r from-[#0ea5ff] to-[#0596ea] text-white font-semibold shadow-md hover:shadow-lg transition-all"
             >
-              Enquire Now
+              {t('enquireNow')}
             </Link>
           </div>
         </section>
@@ -122,3 +122,4 @@ export default function ProductCategoryPage({ params }: { params: { id: string }
     </div>
   );
 }
+

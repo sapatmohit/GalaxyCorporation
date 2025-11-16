@@ -1,8 +1,9 @@
 "use client";
 
-import featuresData from "@/data/features.json";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ReactElement, useEffect, useState } from "react";
+import featuresData from "@/data/features.json";
 
 const ICON_MAP: Record<string, ReactElement> = {
   globe: (
@@ -27,17 +28,6 @@ const ICON_MAP: Record<string, ReactElement> = {
   ),
 };
 
-interface Feature {
-  id: number;
-  icon: ReactElement;
-  title: string;
-  description: string;
-}
-
-const FEATURES: Feature[] = featuresData.features.map(feature => ({
-  ...feature,
-  icon: ICON_MAP[feature.icon]
-}));
 
 // Animated Counter Component
 function AnimatedCounter({ end, duration = 2000 }: { end: number; duration?: number }) {
@@ -66,22 +56,30 @@ function AnimatedCounter({ end, duration = 2000 }: { end: number; duration?: num
 }
 
 export default function WhyChooseUs() {
+  const t = useTranslations('common.whyChooseUs');
+  const features = [
+    { id: 1, icon: 'globe', key: 'globalReach' },
+    { id: 2, icon: 'shield', key: 'qualityAssurance' },
+    { id: 3, icon: 'lightning', key: 'fastEfficient' },
+    { id: 4, icon: 'money', key: 'competitivePricing' },
+  ];
+
   return (
     <section id="why-us" className="relative bg-white py-16 md:py-24">
       <div className="mx-auto max-w-[80%] px-6">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-[32px] md:text-[42px] font-heading font-bold text-[#0a2540] mb-4">
-            {featuresData.title} <span className="text-[#0ea5ff]">{featuresData.titleHighlight}</span>
+            {t('title')} <span className="text-[#0ea5ff]">{t('titleHighlight')}</span>
           </h2>
           <p className="text-[16px] text-[#334155] max-w-[680px] mx-auto">
-            {featuresData.subtitle}
+            {t('subtitle')}
           </p>
         </div>
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {FEATURES.map((feature, index) => (
+          {features.map((feature, index) => (
             <motion.div
               key={feature.id}
               className="group relative bg-white rounded-xl p-6 hover:bg-white hover:shadow-xl hover:shadow-[#0ea5ff]/10 transition-all duration-300 border border-white hover:border-[#0ea5ff]/30"
@@ -92,13 +90,13 @@ export default function WhyChooseUs() {
               whileHover={{ y: -8 }}
             >
               <div className="text-[#0ea5ff] mb-4 group-hover:scale-110 transition-transform duration-300">
-                {feature.icon}
+                {ICON_MAP[feature.icon]}
               </div>
               <h3 className="text-[20px] font-heading font-semibold text-[#0a2540] mb-3">
-                {feature.title}
+                {t(`features.${feature.key}.title`)}
               </h3>
               <p className="text-[14px] leading-relaxed text-[#334155]">
-                {feature.description}
+                {t(`features.${feature.key}.description`)}
               </p>
             </motion.div>
           ))}
@@ -122,7 +120,9 @@ export default function WhyChooseUs() {
                   stat.value
                 )}
               </div>
-              <div className="text-[14px] text-[#334155] mt-1">{stat.label}</div>
+              <div className="text-[14px] text-[#334155] mt-1">
+                {t(`stats.${['globalClients', 'productCategories', 'countriesServed', 'yearsExperience'][index]}`)}
+              </div>
             </motion.div>
           ))}
         </div>

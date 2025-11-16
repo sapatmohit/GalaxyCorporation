@@ -1,6 +1,6 @@
 "use client";
 
-import ContactSection from "@/app/components/ContactSection";
+import ContactSection from "../../components/ContactSection";
 
 export default function ContactPage() {
   return (
@@ -11,3 +11,4 @@ export default function ContactPage() {
     </div>
   );
 }
+

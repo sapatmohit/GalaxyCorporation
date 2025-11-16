@@ -2,15 +2,13 @@
 
 import featuresData from "@/data/features.json";
 import heroData from "@/data/hero.json";
-import membershipsData from "@/data/memberships.json";
 import siteConfig from "@/data/siteConfig.json";
-import teamData from "@/data/team.json";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { FaBolt, FaGlobe, FaMoneyBillWave, FaShieldAlt } from "react-icons/fa";
-import MembershipsSection from "../components/MembershipsSection";
-import TeamSection from "../components/TeamSection";
+import MembershipsSection from "../../components/MembershipsSection";
+import TeamSection from "../../components/TeamSection";
 
 const featuresIcons = {
   globe: <FaGlobe className="w-8 h-8 text-[#0ea5ff]" />,
@@ -19,7 +17,6 @@ const featuresIcons = {
   money: <FaMoneyBillWave className="w-8 h-8 text-[#0ea5ff]" />,
 };
 
-// Animated Counter Component
 function AnimatedCounter({ end, duration = 2000 }: { end: number; duration?: number }) {
   const [count, setCount] = useState(0);
 
@@ -46,34 +43,13 @@ function AnimatedCounter({ end, duration = 2000 }: { end: number; duration?: num
 }
 
 export default function AboutPage() {
+  const t = useTranslations('common.about');
+  const tHero = useTranslations('common.hero');
+  const tFeatures = useTranslations('common.whyChooseUs');
+
   return (
     <div className="w-full">
-      {/* Hero Section */}
-      <section className="relative bg-white pt-20">
-        <div className="mx-auto w-full px-4 sm:px-6 py-12">
-          <div className="text-center max-w-4xl mx-auto">
-            <motion.h1 
-              className="text-3xl sm:text-4xl md:text-5xl font-bold font-heading text-[#0a2540] mb-6"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              About <span className="text-[#0ea5ff]">{siteConfig.company.name}</span>
-            </motion.h1>
-            <motion.p 
-              className="text-lg sm:text-xl text-[#334155] mb-8 max-w-3xl mx-auto"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              {siteConfig.company.description}
-            </motion.p>
-          </div>
-        </div>
-      </section>
-
-      {/* Company Story Section */}
-      <section className="bg-gray-50">
+      <section className="relative pt-32 bg-gray-50">
         <div className="mx-auto w-full px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -84,26 +60,26 @@ export default function AboutPage() {
                 transition={{ duration: 0.6 }}
               >
                 <h2 className="text-2xl sm:text-3xl font-bold font-heading text-[#0a2540] mb-6">
-                  Our Story
+                  {t('ourStory')}
                 </h2>
                 <p className="text-[#334155] mb-6 leading-relaxed">
-                  {heroData.content.description1}
+                  {tHero('description1')}
                 </p>
                 <p className="text-[#334155] mb-6 leading-relaxed">
-                  {heroData.content.description2}
+                  {tHero('description2')}
                 </p>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
                     <p className="text-2xl font-bold text-[#0ea5ff]">{siteConfig.company.foundedYear}</p>
-                    <p className="text-sm text-[#334155]">Founded</p>
+                    <p className="text-sm text-[#334155]">{t('founded')}</p>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
                     <p className="text-2xl font-bold text-[#0ea5ff]">50+</p>
-                    <p className="text-sm text-[#334155]">Countries Served</p>
+                    <p className="text-sm text-[#334155]">{t('countriesServed')}</p>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
                     <p className="text-2xl font-bold text-[#0ea5ff]">25+</p>
-                    <p className="text-sm text-[#334155]">Product Categories</p>
+                    <p className="text-sm text-[#334155]">{t('productCategories')}</p>
                   </div>
                 </div>
               </motion.div>
@@ -134,7 +110,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
       <section className="py-16 bg-white">
         <div className="mx-auto w-full px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
@@ -146,36 +121,42 @@ export default function AboutPage() {
               transition={{ duration: 0.6 }}
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-heading text-[#0a2540] mb-4">
-                {featuresData.title} <span className="text-[#0ea5ff]">{featuresData.titleHighlight}</span>
+                {tFeatures('title')} <span className="text-[#0ea5ff]">{tFeatures('titleHighlight')}</span>
               </h2>
               <p className="text-lg text-[#334155] max-w-3xl mx-auto">
-                {featuresData.subtitle}
+                {tFeatures('subtitle')}
               </p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {featuresData.features.map((feature, index) => (
-                <motion.div
-                  key={feature.id}
-                  className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <div className="mb-4">
-                    {featuresIcons[feature.icon as keyof typeof featuresIcons]}
-                  </div>
-                  <h3 className="text-xl font-bold text-[#0a2540] mb-3">{feature.title}</h3>
-                  <p className="text-[#334155]">{feature.description}</p>
-                </motion.div>
-              ))}
+              {featuresData.features.map((feature, index) => {
+                const featureKeys = ['globalReach', 'qualityAssurance', 'fastEfficient', 'competitivePricing'];
+                return (
+                  <motion.div
+                    key={feature.id}
+                    className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                  >
+                    <div className="mb-4">
+                      {featuresIcons[feature.icon as keyof typeof featuresIcons]}
+                    </div>
+                    <h3 className="text-xl font-bold text-[#0a2540] mb-3">
+                      {tFeatures(`features.${featureKeys[index]}.title`)}
+                    </h3>
+                    <p className="text-[#334155]">
+                      {tFeatures(`features.${featureKeys[index]}.description`)}
+                    </p>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Row */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-[#0a2540]/10">
          {featuresData.stats.map((stat, index) => (
          <motion.div 
@@ -193,16 +174,16 @@ export default function AboutPage() {
                stat.value
                )}
             </div>
-            <div className="text-[14px] text-[#334155] mt-1">{stat.label}</div>
+            <div className="text-[14px] text-[#334155] mt-1">
+              {tFeatures(`stats.${['globalClients', 'productCategories', 'countriesServed', 'yearsExperience'][index]}`)}
+            </div>
          </motion.div>
          ))}
       </div>
 
-      {/* Memberships Section */}
       <MembershipsSection />
-
-      {/* Team Section */}
       <TeamSection />
     </div>
   );
 }
+

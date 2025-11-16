@@ -1,6 +1,7 @@
 "use client";
 
 import teamData from "@/data/team.json";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -26,6 +27,7 @@ const TEAM_MEMBERS: TeamMember[] = teamData.members.map(member => ({
 }));
 
 export default function TeamSection() {
+  const t = useTranslations('common.team');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(1);
 
@@ -75,13 +77,13 @@ export default function TeamSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#0a2540] mb-3 sm:mb-4">
-            {teamData.title}{" "}
+            {t('title')}{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0ea5ff] to-[#0596ea]">
-              {teamData.titleHighlight}
+              {t('titleHighlight')}
             </span>
           </h2>
           <p className="text-base sm:text-lg text-[#334155] max-w-2xl mx-auto px-2">
-            {teamData.subtitle}
+            {t('subtitle')}
           </p>
         </motion.div>
 

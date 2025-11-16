@@ -1,0 +1,291 @@
+{
+	"metaTitle": "Galaxy Corporation - Global Agro Exporters",
+	"metaDescription": "Leading Exporter & Trader for Agro Commodities in India",
+	"welcome": "Welcome to our website",
+	"nav": {
+		"home": "Home",
+		"about": "About",
+		"products": "Products",
+		"team": "Team",
+		"contact": "Contact",
+		"enquireNow": "Enquire Now"
+	},
+	"hero": {
+		"title": "Welcome To",
+		"highlight": "Galaxy Corporation",
+		"description1": "Galaxy Corporation is one of the leading Exporter & Trader for Agro Commodities in India. The company is exporting agro commodities to customers across the globe. We are located in Pune which is a major business hub for agro commodities. The company deals in a wide range of products such as Oil Seeds, Cereals, Spices, Fresh Vegetable, Fresh Fruits, Frozen Vegetable, Frozen Fruits, Dry Fruits, Pulses, etc.",
+		"description2": "The core strength of the Company is its strong procurement network, storage, processing, and supply of all agricultural commodities which extends into all important producing centers across India. We have the necessary expertise and backbone to meet any scale of demand for agricultural commodities.",
+		"ctaText": "Know More",
+		"previousImage": "Previous image",
+		"nextImage": "Next image",
+		"goToImage": "Go to image",
+		"slides": [
+			{ "alt": "LPG Cargo Ship" },
+			{ "alt": "Agricultural Products" },
+			{ "alt": "Global Trade" }
+		]
+	},
+	"whyChooseUs": {
+		"title": "Why Choose",
+		"titleHighlight": "Galaxy Corporation",
+		"subtitle": "We combine decades of agricultural expertise with modern trade practices to deliver exceptional value to our global partners.",
+		"features": {
+			"globalReach": {
+				"title": "Global Reach",
+				"description": "Serving customers across continents with reliable export services and extensive international trade network."
+			},
+			"qualityAssurance": {
+				"title": "Quality Assurance",
+				"description": "Stringent quality control at every step ensures premium grade products that meet international standards."
+			},
+			"fastEfficient": {
+				"title": "Fast & Efficient",
+				"description": "Streamlined logistics and documentation processes ensure timely delivery and smooth customs clearance."
+			},
+			"competitivePricing": {
+				"title": "Competitive Pricing",
+				"description": "Direct sourcing from farmers and bulk processing capabilities allow us to offer the best market rates."
+			}
+		},
+		"stats": {
+			"globalClients": "Global Clients",
+			"productCategories": "Product Categories",
+			"countriesServed": "Countries Served",
+			"yearsExperience": "Years Experience"
+		}
+	},
+	"products": {
+		"title": "Our",
+		"titleHighlight": "Products",
+		"subtitle": "We export premium quality agricultural commodities across a wide range of categories to meet global demand.",
+		"allProducts": "All Products",
+		"searchPlaceholder": "Search products...",
+		"viewDetails": "View Details",
+		"noProductsFound": "No products found",
+		"tryAdjusting": "Try adjusting your search or filter criteria",
+		"clearFilters": "Clear Filters",
+		"productsIn": "Products in",
+		"back": "Back",
+		"explore": "Explore",
+		"products": "Products",
+		"enquireNow": "Enquire Now",
+		"productCategories": "Product Categories",
+		"countriesServed": "Countries Served",
+		"yearsExperience": "Years Experience",
+		"lookingForSpecific": "Looking for something specific? We deal in 25+ product categories.",
+		"viewAllProducts": "View All Products",
+		"exploreProducts": "Explore Products",
+		"totalProducts": "Total Products",
+		"catalog": {
+			"pulses-legumes": {
+				"name": "Pulses & Legumes",
+				"description": "High-quality pulses and legumes sourced from trusted suppliers",
+				"items": [
+					"Chickpeas (Kabuli & Desi)",
+					"Red Lentils (Masoor Dal)",
+					"Green Lentils",
+					"Black Lentils (Urad Dal)",
+					"Kidney Beans (Rajma)",
+					"Mung Beans (Moong Dal)",
+					"Pigeon Peas (Toor Dal)",
+					"Black-eyed Peas",
+					"Soya Beans"
+				],
+				"products": [
+					{ "name": "Chickpeas (Kabuli & Desi)", "description": "High protein content, ideal for various culinary applications" },
+					{ "name": "Red Lentils (Masoor Dal)", "description": "Quick-cooking lentils with excellent nutritional value" },
+					{ "name": "Green Lentils", "description": "Rich in fiber and minerals, perfect for soups and salads" },
+					{ "name": "Black Lentils (Urad Dal)", "description": "Premium quality with high protein content" },
+					{ "name": "Kidney Beans (Rajma)", "description": "Large, nutritious beans ideal for curries and stews" },
+					{ "name": "Mung Beans (Moong Dal)", "description": "Easily digestible, rich in vitamins and minerals" },
+					{ "name": "Pigeon Peas (Toor Dal)", "description": "Staple pulse with excellent taste and nutrition" },
+					{ "name": "Black-eyed Peas", "description": "Versatile legume with distinct flavor" },
+					{ "name": "Soya Beans", "description": "High protein content, multipurpose legume" }
+				]
+			},
+			"spices": {
+				"name": "Spices",
+				"description": "Authentic spices with rich aroma and superior quality",
+				"items": [
+					"Turmeric (Powder & Whole)",
+					"Cumin Seeds",
+					"Coriander (Seeds & Powder)",
+					"Red Chilli (Powder & Whole)",
+					"Black Pepper",
+					"Cardamom",
+					"Cloves",
+					"Fenugreek"
+				],
+				"products": [
+					{ "name": "Turmeric Powder", "description": "Bright color, high curcumin content" },
+					{ "name": "Turmeric Whole (Fingers)", "description": "Premium grade whole turmeric" },
+					{ "name": "Cumin Seeds", "description": "Aromatic seeds with distinct flavor" },
+					{ "name": "Coriander Seeds", "description": "Fresh, aromatic seeds for grinding" },
+					{ "name": "Coriander Powder", "description": "Finely ground, preserving natural oils" },
+					{ "name": "Red Chilli Powder", "description": "Various heat levels available" },
+					{ "name": "Whole Dry Red Chillies", "description": "Premium grade, sun-dried" },
+					{ "name": "Black Pepper", "description": "Bold, pungent flavor" },
+					{ "name": "Green Cardamom", "description": "Aromatic pods with sweet flavor" },
+					{ "name": "Cloves", "description": "Premium quality, hand-picked" },
+					{ "name": "Fenugreek Seeds", "description": "Bitter-sweet seeds with health benefits" },
+					{ "name": "Fennel Seeds", "description": "Sweet, aromatic seeds" }
+				]
+			},
+			"cereals": {
+				"name": "Cereals",
+				"description": "Premium grains including basmati rice, wheat, and millets",
+				"items": [
+					"Rice Basmati",
+					"Non Basmati Rice",
+					"Wheat Flour",
+					"Millet (Bajra)",
+					"Jowar (Sorghum)",
+					"Maize (Corn)",
+					"Barley"
+				],
+				"products": [
+					{ "name": "Basmati Rice (1121)", "description": "Extra long grain, aged rice with superior aroma" },
+					{ "name": "Basmati Rice (Pusa)", "description": "Traditional basmati variety" },
+					{ "name": "Non-Basmati Rice (IR64)", "description": "Long grain, non-sticky rice" },
+					{ "name": "Parboiled Rice", "description": "Partially cooked rice with enhanced nutrition" },
+					{ "name": "Wheat Flour", "description": "Fine quality, suitable for various applications" },
+					{ "name": "Pearl Millet (Bajra)", "description": "Nutritious millet variety" },
+					{ "name": "Sorghum (Jowar)", "description": "Gluten-free grain alternative" },
+					{ "name": "Maize (Corn)", "description": "Yellow and white varieties available" },
+					{ "name": "Barley", "description": "Hulled and pearl barley" }
+				]
+			},
+			"dry-fruits-nuts": {
+				"name": "Dry Fruits & Nuts",
+				"description": "Premium quality dry fruits and nuts for global markets",
+				"items": [
+					"Almonds",
+					"Cashews",
+					"Walnuts",
+					"Pistachios",
+					"Raisins (Golden & Black)",
+					"Dates",
+					"Dried Apricots",
+					"Figs"
+				],
+				"products": [
+					{ "name": "Almonds", "description": "California and mamra varieties" },
+					{ "name": "Cashews (W180, W240, W320)", "description": "Premium grade, whole cashews" },
+					{ "name": "Walnuts", "description": "Light and amber varieties" },
+					{ "name": "Pistachios", "description": "Iranian and Afghan varieties" },
+					{ "name": "Golden Raisins", "description": "Sweet, seedless raisins" },
+					{ "name": "Black Raisins", "description": "Natural, sun-dried" },
+					{ "name": "Dates (Medjool, Deglet Noor)", "description": "Premium quality, soft dates" },
+					{ "name": "Dried Apricots", "description": "Sweet, naturally preserved" },
+					{ "name": "Figs", "description": "Dried figs with natural sweetness" }
+				]
+			},
+			"aluminum-domes": {
+				"name": "Aluminum Domes",
+				"description": "High-quality aluminum domes for industrial and commercial applications",
+				"items": ["External Domes", "Internal Domes", "Custom Sizes"],
+				"products": [
+					{ "name": "External Aluminum Domes", "description": "Durable external domes for storage tanks and industrial applications" },
+					{ "name": "Internal Aluminum Domes", "description": "Precision-engineered internal domes for specialized equipment" },
+					{ "name": "Custom Aluminum Domes", "description": "Tailored solutions for specific industrial requirements" }
+				]
+			},
+			"petroleum-products": {
+				"name": "Petroleum Products",
+				"description": "Premium petroleum products including LPG for industrial and domestic use",
+				"items": ["LPG (Liquefied Petroleum Gas)"],
+				"products": [
+					{ "name": "LPG (Liquefied Petroleum Gas)", "description": "High-purity LPG for domestic and industrial applications" }
+				]
+			},
+			"fertilizers": {
+				"name": "Fertilizers",
+				"description": "Comprehensive range of fertilizers for agricultural enhancement",
+				"items": [
+					"Nitrogenous Fertilizers",
+					"Phosphatic Fertilizers",
+					"Potassic Fertilizers",
+					"Complex Fertilizers"
+				],
+				"products": [
+					{ "name": "Nitrogenous Fertilizers", "description": "Essential nitrogen supplements for plant growth and development" },
+					{ "name": "Phosphatic Fertilizers", "description": "Phosphate-rich fertilizers for root development and flowering" },
+					{ "name": "Potassic Fertilizers", "description": "Potassium-based fertilizers for improved crop quality and disease resistance" },
+					{ "name": "Complex Fertilizers", "description": "Multi-nutrient formulations for balanced plant nutrition" }
+				]
+			}
+		}
+	},
+	"memberships": {
+		"title": "Memberships &",
+		"titleHighlight": "Affiliations",
+		"subtitle": "We are proud members of leading agricultural and trade organizations, ensuring compliance and excellence in international trade.",
+		"trustBadge": "Certified & Compliant with International Trade Standards",
+		"organizations": [
+			{ "name": "APEDA", "fullName": "Agricultural & Processed Food Products Export Development Authority", "description": "Registered exporter under APEDA" },
+			{ "name": "Spices Board", "fullName": "Spices Board of India", "description": "Authorized spice exporter" },
+			{ "name": "MCCIA", "fullName": "Mahratta Chamber of Commerce, Industries and Agriculture", "description": "Active member since establishment" },
+			{ "name": "MSAMB", "fullName": "Maharashtra State Agricultural Marketing Board", "description": "Certified agricultural trader" },
+			{ "name": "ICCIA", "fullName": "Islamic Chamber of Commerce, Industry and Agriculture", "description": "Member organization" }
+		]
+	},
+	"team": {
+		"title": "Our",
+		"titleHighlight": "Team",
+		"subtitle": "Meet the dedicated professionals behind Galaxy Corporation's success in global agricultural trade.",
+		"members": [
+			{ "name": "Rajesh Kumar", "position": "Managing Director", "bio": "Leading Galaxy Corporation with 20+ years of experience in agricultural exports and international trade." },
+			{ "name": "Priya Sharma", "position": "Export Manager", "bio": "Expert in logistics coordination and ensuring timely delivery to global markets." },
+			{ "name": "Amit Patel", "position": "Quality Control Head", "bio": "Ensuring all products meet international quality standards with meticulous testing and certification." },
+			{ "name": "Sneha Desai", "position": "Procurement Manager", "bio": "Building strong relationships with farmers and suppliers across India for premium sourcing." },
+			{ "name": "Vikram Singh", "position": "Operations Director", "bio": "Streamlining operations and ensuring efficient processing and packaging workflows." },
+			{ "name": "Kavita Reddy", "position": "Business Development", "bio": "Expanding our global footprint and establishing new partnerships in international markets." }
+		]
+	},
+	"contact": {
+		"title": "Contact",
+		"titleHighlight": "Us",
+		"subtitle": "Have a question or ready to start a partnership? Get in touch with us and we'll respond within 24 hours.",
+		"formTitle": "Send us an Enquiry",
+		"form": {
+			"name": "Full Name",
+			"email": "Email Address",
+			"phone": "Phone Number",
+			"subject": "Subject",
+			"message": "Your Message",
+			"submit": "Send Enquiry",
+			"submitting": "Sending...",
+			"namePlaceholder": "Enter your full name",
+			"emailPlaceholder": "your@email.com",
+			"messagePlaceholder": "Tell us about your requirements...",
+			"subjects": {
+				"productInquiry": "Product Inquiry",
+				"requestQuote": "Request for Quote",
+				"partnership": "Partnership Opportunity",
+				"qualityConcern": "Quality Concern",
+				"other": "Other"
+			}
+		},
+		"needAssistance": "Need immediate assistance?",
+		"callUs": "Call us at",
+		"successMessage": "Thank you for your enquiry! We will get back to you soon.",
+		"contactInfo": {
+			"address": "Address",
+			"email": "Email",
+			"phone": "Phone",
+			"businessHours": "Business Hours",
+			"weekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+			"saturday": "Saturday: 9:00 AM - 1:00 PM",
+			"sunday": "Sunday: Closed"
+		}
+	},
+	"about": {
+		"title": "About",
+		"titleHighlight": "Galaxy Corporation",
+		"ourStory": "Our Story",
+		"founded": "Founded",
+		"countriesServed": "Countries Served",
+		"productCategories": "Product Categories"
+	},
+	"language": "Language"
+}

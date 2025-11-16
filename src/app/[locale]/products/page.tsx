@@ -1,27 +1,24 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 import productsData from "@/data/products.json";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function ProductsPage() {
+  const t = useTranslations('common.products');
   const [activeFilter, setActiveFilter] = useState("all");
   const [filteredProducts, setFilteredProducts] = useState(productsData.categories);
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Get unique categories for filter buttons
-  const categories = ["all", ...productsData.categories.map(product => product.id)];
-
   useEffect(() => {
     let result = productsData.categories;
     
-    // Filter by category
     if (activeFilter !== "all") {
       result = result.filter(product => product.id === activeFilter);
     }
     
-    // Filter by search query
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
       result = result.filter(product => 
@@ -37,7 +34,6 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-white py-16 sm:py-20 md:py-24">
       <div className="mx-auto w-full px-4 sm:px-6">
-        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
           <motion.h1 
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#0a2540] mb-4"
@@ -45,9 +41,9 @@ export default function ProductsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {productsData.title}{" "}
+            {t('title')}{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0ea5ff] to-[#0596ea]">
-              {productsData.titleHighlight}
+              {t('titleHighlight')}
             </span>
           </motion.h1>
           <motion.p 
@@ -56,22 +52,20 @@ export default function ProductsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            {productsData.subtitle}
+            {t('subtitle')}
           </motion.p>
         </div>
 
-        {/* Search and Filters */}
         <motion.div 
           className="max-w-4xl mx-auto mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {/* Search Bar */}
           <div className="relative mb-6">
             <input
               type="text"
-              placeholder="Search products..."
+              placeholder={t('searchPlaceholder')}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full h-12 px-4 pr-10 rounded-xl border border-[#0a2540]/10 bg-white focus:border-[#0ea5ff] focus:ring-2 focus:ring-[#0ea5ff]/20 outline-none transition-all text-sm sm:text-base"
@@ -86,7 +80,6 @@ export default function ProductsPage() {
             </svg>
           </div>
 
-          {/* Category Filters */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
             <button
               onClick={() => setActiveFilter("all")}
@@ -96,7 +89,7 @@ export default function ProductsPage() {
                   : "bg-white text-[#0a2540] hover:bg-[#0ea5ff]/10 border border-[#0a2540]/10"
               }`}
             >
-              All Products
+              {t('allProducts')}
             </button>
             
             {productsData.categories.map((category) => (
@@ -115,7 +108,6 @@ export default function ProductsPage() {
           </div>
         </motion.div>
 
-        {/* Products Grid */}
         <motion.div 
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
           initial={{ opacity: 0 }}
@@ -168,7 +160,7 @@ export default function ProductsPage() {
                     href={`/products/${category.id}`}
                     className="inline-flex items-center justify-center w-full h-10 sm:h-12 rounded-xl bg-gradient-to-r from-[#0ea5ff] to-[#0596ea] text-white text-sm sm:text-base font-semibold shadow-md hover:shadow-lg transition-all duration-300"
                   >
-                    View Details
+                    {t('viewDetails')}
                   </Link>
                 </div>
               </motion.div>
@@ -180,8 +172,8 @@ export default function ProductsPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-[#0a2540] mb-2">No products found</h3>
-              <p className="text-[#334155] mb-6">Try adjusting your search or filter criteria</p>
+              <h3 className="text-xl font-bold text-[#0a2540] mb-2">{t('noProductsFound')}</h3>
+              <p className="text-[#334155] mb-6">{t('tryAdjusting')}</p>
               <button
                 onClick={() => {
                   setSearchQuery("");
@@ -189,13 +181,12 @@ export default function ProductsPage() {
                 }}
                 className="inline-flex items-center justify-center h-10 px-6 rounded-lg bg-[#0ea5ff] text-white font-semibold shadow-md hover:bg-[#0596ea] transition-all"
               >
-                Clear Filters
+                {t('clearFilters')}
               </button>
             </div>
           )}
         </motion.div>
 
-        {/* Stats Section */}
         <motion.div 
           className="mt-16 sm:mt-20 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-6"
           initial={{ opacity: 0, y: 30 }}
@@ -205,24 +196,25 @@ export default function ProductsPage() {
         >
           <div className="bg-gradient-to-br from-[#0ea5ff]/10 to-[#0596ea]/10 rounded-2xl p-5 text-center">
             <p className="text-2xl sm:text-3xl font-bold text-[#0a2540] mb-1">{productsData.categories.length}</p>
-            <p className="text-sm sm:text-base text-[#334155]">Product Categories</p>
+            <p className="text-sm sm:text-base text-[#334155]">{t('productCategories')}</p>
           </div>
           <div className="bg-gradient-to-br from-[#0ea5ff]/10 to-[#0596ea]/10 rounded-2xl p-5 text-center">
             <p className="text-2xl sm:text-3xl font-bold text-[#0a2540] mb-1">
               {productsData.categories.reduce((total, category) => total + category.items.length, 0)}
             </p>
-            <p className="text-sm sm:text-base text-[#334155]">Total Products</p>
+            <p className="text-sm sm:text-base text-[#334155]">{t('totalProducts')}</p>
           </div>
           <div className="bg-gradient-to-br from-[#0ea5ff]/10 to-[#0596ea]/10 rounded-2xl p-5 text-center">
             <p className="text-2xl sm:text-3xl font-bold text-[#0a2540] mb-1">50+</p>
-            <p className="text-sm sm:text-base text-[#334155]">Countries Served</p>
+            <p className="text-sm sm:text-base text-[#334155]">{t('countriesServed')}</p>
           </div>
           <div className="bg-gradient-to-br from-[#0ea5ff]/10 to-[#0596ea]/10 rounded-2xl p-5 text-center">
             <p className="text-2xl sm:text-3xl font-bold text-[#0a2540] mb-1">15+</p>
-            <p className="text-sm sm:text-base text-[#334155]">Years Experience</p>
+            <p className="text-sm sm:text-base text-[#334155]">{t('yearsExperience')}</p>
           </div>
         </motion.div>
       </div>
     </div>
   );
 }
+

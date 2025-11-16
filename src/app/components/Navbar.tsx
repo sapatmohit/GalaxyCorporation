@@ -2,16 +2,24 @@
 
 import navData from "@/data/navigation.json";
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-
-const NAV = navData.mainNav;
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
+  const t = useTranslations('common.nav');
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  const NAV = [
+    { label: t('home'), href: '/' },
+    { label: t('products'), href: '/#products' },
+    { label: t('about'), href: '/about' },
+    { label: t('team'), href: '/#team' },
+    { label: t('contact'), href: '/contact' },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -83,14 +91,17 @@ export default function Navbar() {
             <span className={`w-6 h-0.5 bg-[#0a2540] transition-transform ${mobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
           </button>
 
-          {/* Right: Enquire Now */}
-          <Link
-            href={navData.cta.href}
-            onClick={() => handleLinkClick(navData.cta.href)}
-            className="hidden md:inline-flex items-center justify-center h-11 px-6 rounded-lg bg-[#0ea5ff] text-white text-[14px] font-semibold shadow-sm hover:bg-[#0596ea] hover:shadow-md transition-all"
-          >
-            {navData.cta.text}
-          </Link>
+          {/* Right: Language Switcher & Enquire Now */}
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
+            <Link
+              href={navData.cta.href}
+              onClick={() => handleLinkClick(navData.cta.href)}
+              className="inline-flex items-center justify-center h-11 px-6 rounded-lg bg-[#0ea5ff] text-white text-[14px] font-semibold shadow-sm hover:bg-[#0596ea] hover:shadow-md transition-all"
+            >
+              {t('enquireNow')}
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -108,13 +119,18 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href={navData.cta.href}
-              onClick={() => handleLinkClick(navData.cta.href)}
-              className="mt-4 inline-flex items-center justify-center h-11 px-6 rounded-lg bg-[#0ea5ff] text-white text-[14px] font-semibold"
-            >
-              {navData.cta.text}
-            </Link>
+            <div className="mt-4 flex flex-col gap-3">
+              <div className="px-2">
+                <LanguageSwitcher />
+              </div>
+              <Link
+                href={navData.cta.href}
+                onClick={() => handleLinkClick(navData.cta.href)}
+                className="inline-flex items-center justify-center h-11 px-6 rounded-lg bg-[#0ea5ff] text-white text-[14px] font-semibold"
+              >
+                {t('enquireNow')}
+              </Link>
+            </div>
           </nav>
         </div>
       )}

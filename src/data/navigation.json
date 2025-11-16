@@ -1,32 +1,32 @@
 {
-  "logo": {
-    "text": "Galaxy Corporation",
-    "image": "/Logo.png"
-  },
-  "mainNav": [
-    {
-      "label": "Home",
-      "href": "/"
-    },
-    {
-      "label": "Products",
-      "href": "/#products"
-    },
-    {
-      "label": "About",
-      "href": "/about"
-    },
-    {
-      "label": "Team",
-      "href": "/#team"
-    },
-    {
-      "label": "Contact",
-      "href": "/contact"
-    }
-  ],
-  "cta": {
-    "text": "Enquire Now",
-    "href": "/contact"
-  }
+	"logo": {
+		"text": "Galaxy Corporation",
+		"image": "/Logo.png"
+	},
+	"mainNav": [
+		{
+			"label": "Home",
+			"href": "/"
+		},
+		{
+			"label": "Products",
+			"href": "/products"
+		},
+		{
+			"label": "About",
+			"href": "/about"
+		},
+		{
+			"label": "Team",
+			"href": "/#team"
+		},
+		{
+			"label": "Contact",
+			"href": "/contact"
+		}
+	],
+	"cta": {
+		"text": "Enquire Now",
+		"href": "/contact"
+	}
 }
